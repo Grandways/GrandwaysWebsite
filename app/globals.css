@@ -31,3 +31,23 @@ body {
     text-wrap: balance;
   }
 }
+
+h1{
+  font-size: 81px;
+}
+
+h2{
+  font-size: 54px;
+}
+
+h3{
+  font-size: 36px;
+}
+
+h4{
+  font-size: 24px;
+}
+
+p{
+  font-size: 18px;
+}
