@@ -2,52 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Mark\ Simonson\ \ Proxima\ Nova\ Light.otf) format("opentype");
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Mark\ Simonson\ \ Proxima\ Nova\ Light\ Italic.otf) format("opentype");
+  font-style: italic;
+  font-display: swap;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Mark\ Simonson\ \ Proxima\ Nova\ Bold.otf) format("opentype");
+  font-weight: bold;
+  font-display: swap;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/Mark\ Simonson\ \ Proxima\ Nova\ Bold\ Italic.otf) format("opentype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 h1{
   font-size: 81px;
+  color: #333333;
+  font-family: "Proxima Nova";
+  font-weight: bold;
 }
 
 h2{
   font-size: 54px;
+  color: #333333;
+  font-family: "Proxima Nova";
+  font-weight: bold;
 }
 
 h3{
   font-size: 36px;
+  color: #333333;
+  font-family: "Proxima Nova";
+  font-weight: bold;
 }
 
 h4{
   font-size: 24px;
+  color: #333333;
+  font-family: "Proxima Nova";
 }
 
 p{
   font-size: 18px;
+  color: #333333;
+  font-family: "Proxima Nova";
+}
+
+.heroimg{
+  border: 3px solid white;
 }
