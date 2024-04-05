@@ -5,13 +5,23 @@ import { FaRegCopyright } from "react-icons/fa";
 
 export function Navbar(){
     return(
-        <div className="h-[64px] w-full px-[135px] flex justify-between items-center">
-          <Image src={logo} alt="Grandways Logo" width={224} height={50} className="cursor-pointer" />
+        <div className="h-[64px] w-full px-[135px] flex justify-between items-center relative z-50">
+            <Link href={"/"}>
+                <Image src={logo} alt="Grandways Logo" width={224} height={50} className="cursor-pointer" />
+            </Link>
           <div className="flex gap-[20px]">
-            <p className="cursor-pointer text-[#E10617] uppercase">About</p>
-            <p className="cursor-pointer text-[#E10617] uppercase">Services</p>
-            <p className="cursor-pointer text-[#E10617] uppercase">Brands</p>
-            <p className="cursor-pointer text-[#E10617] uppercase">Contact</p>
+            <Link href={"/"}>
+                <p className="cursor-pointer text-[#E10617] uppercase">Home</p>
+            </Link>
+            <Link href={"/about"}>
+                <p className="cursor-pointer text-[#E10617] uppercase">About</p>
+            </Link>
+            <Link href={"/services"}>
+                <p className="cursor-pointer text-[#E10617] uppercase">Services</p>
+            </Link>
+            <Link href={"/contact"}>
+                <p className="cursor-pointer text-[#E10617] uppercase">Contact</p>
+            </Link>
           </div>
         </div>
     )
@@ -25,16 +35,24 @@ export function Footer(){
                 <div className="flex gap-[50px]">
                     <div className="flex flex-col">
                         <p className="text-[24px] mb-[25px]">Menu</p>
-                        <div className="flex flex-col gap-[10px]">
-                            <p className="cursor-pointer">Home</p>
-                            <p className="cursor-pointer">About</p>
-                            <p className="cursor-pointer">Services</p>
-                            <p className="cursor-pointer">Contact</p>
+                        <div className="flex flex-col gap-[5px]">
+                            <Link href={"/"}>
+                                <p className="cursor-pointer">Home</p>
+                            </Link>
+                            <Link href={"/about"}>
+                                <p className="cursor-pointer">About</p>
+                            </Link>
+                            <Link href={"/services"}>
+                                <p className="cursor-pointer">Services</p>
+                            </Link>
+                            <Link href={"/contact"}>
+                                <p className="cursor-pointer">Contact</p>
+                            </Link>
                         </div>
                     </div>
                     <div className="flex flex-col">
                         <p className="text-[24px] mb-[25px]">Social</p>
-                        <div className="flex flex-col gap-[10px]">
+                        <div className="flex flex-col gap-[5px]">
                             <p className="cursor-pointer">Instagram</p>
                             <p className="cursor-pointer">Facebook</p>
                             <p className="cursor-pointer">X</p>
