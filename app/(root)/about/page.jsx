@@ -50,7 +50,7 @@ const About = () => {
           <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get Started</button>
         </div>
 
-        <div className="w-full flex flex-col px-[135px] py-[50px] gap-[50px]">
+        <div className="w-full flex flex-col items-center px-[135px] py-[50px] gap-[50px]">
           <h2 className="text-center">Our Values</h2>
 
           <div className="flex gap-[50px]">
