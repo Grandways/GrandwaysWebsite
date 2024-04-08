@@ -68,9 +68,16 @@ p{
 }
 
 .teamcard{
-  border: 2px solid #F8F9F9;
+  border: 2px solid #222952;
 }
 
 button{
   font-family: "Proxima Nova";
+}
+
+button:hover{
+  background-color: #222952;
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 250ms;
 }

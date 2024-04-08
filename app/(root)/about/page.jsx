@@ -94,42 +94,42 @@ const About = () => {
           
           <div className="flex flex-col items-center gap-[25px]">
             <div className="flex items-center gap-[50px]">
-              <div className="group w-[270px] h-[100px] bg-[#F8F9F9] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
+              <div className="group w-[270px] h-[100px] bg-[#222952] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
                 <div className="w-[125px] h-[125px] group-hover:w-[300px] group-hover:right-[-5%] duration-500 ease-in-out rounded-[100px] bg-white absolute z-0 right-[60%]"></div>
-                <p className="absolute z-1">Creative Design & Animation</p>
+                <p className="absolute z-1">Creative D<span className="text-white group-hover:text-black transition duration-500 ease-in-out">esign & Animation</span></p>
               </div>
               
-              <div className="group w-[270px] h-[100px] bg-[#F8F9F9] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
+              <div className="group w-[270px] h-[100px] bg-[#222952] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
                 <div className="w-[125px] h-[125px] group-hover:w-[300px] group-hover:right-[-5%] duration-500 ease-in-out rounded-[100px] bg-white absolute z-0 right-[60%]"></div>
-                <p className="text-center absolute z-1">Production &<br/>Quality Assurance</p>
+                <p className="text-center absolute z-1">Pro<span className="text-white group-hover:text-black transition duration-500 ease-in-out">duction &</span><br/>Quali<span className="text-white group-hover:text-black transition duration-500 ease-in-out">ty Assurance</span></p>
               </div>
               
-              <div className="group w-[270px] h-[100px] bg-[#F8F9F9] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
+              <div className="group w-[270px] h-[100px] bg-[#222952] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
                 <div className="w-[125px] h-[125px] group-hover:w-[300px] group-hover:right-[-5%] duration-500 ease-in-out rounded-[100px] bg-white absolute z-0 right-[60%]"></div>
-                <p className="absolute z-1">Brand Strategy</p>
+                <p className="absolute z-1">Bran<span  className="text-white group-hover:text-black transition duration-500 ease-in-out">d Strategy</span></p>
               </div>
             </div>
             
             <div className="flex items-center gap-[50px]">
-              <div className="group w-[270px] h-[100px] bg-[#F8F9F9] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
+              <div className="group w-[270px] h-[100px] bg-[#222952] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
                 <div className="w-[125px] h-[125px] group-hover:w-[300px] group-hover:right-[-5%] duration-500 ease-in-out rounded-[100px] bg-white absolute z-0 right-[60%]"></div>
-                <p className="absolute z-1">PR & Media Specialist</p>
+                <p className="absolute z-1">PR & M<span className="text-white group-hover:text-black transition duration-500 ease-in-out">edia Specialist</span></p>
               </div>
               
-              <div className="group w-[270px] h-[100px] bg-[#F8F9F9] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
+              <div className="group w-[270px] h-[100px] bg-[#222952] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
                 <div className="w-[125px] h-[125px] group-hover:w-[300px] group-hover:right-[-5%] duration-500 ease-in-out rounded-[100px] bg-white absolute z-0 right-[60%]"></div>
-                <p className="text-center absolute z-1">Copy Writing</p>
+                <p className="text-center absolute z-1">Co<span className="text-white group-hover:text-black transition duration-500 ease-in-out">py Writing</span></p>
               </div>
               
-              <div className="group w-[270px] h-[100px] bg-[#F8F9F9] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
+              <div className="group w-[270px] h-[100px] bg-[#222952] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden">
                 <div className="w-[125px] h-[125px] group-hover:w-[300px] group-hover:right-[-5%] duration-500 ease-in-out rounded-[100px] bg-white absolute z-0 right-[60%]"></div>
-                <p className="absolute z-1">Publications</p>
+                <p className="absolute z-1">Pu<span className="text-white group-hover:text-black transition duration-500 ease-in-out">blications</span></p>
               </div>
             </div>
             
-            <div className="group w-[270px] h-[100px] bg-[#F8F9F9] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden mb-[25px]">
+            <div className="group w-[270px] h-[100px] bg-[#222952] teamcard flex justify-center items-center rounded-[15px] relative overflow-hidden mb-[25px]">
               <div className="w-[125px] h-[125px] group-hover:w-[300px] group-hover:right-[-5%] duration-500 ease-in-out rounded-[100px] bg-white absolute z-0 right-[60%]"></div>
-              <p className="absolute z-1">Photography</p>
+              <p className="absolute z-1">Ph<span className="text-white group-hover:text-black transition duration-500 ease-in-out">otography</span></p>
             </div>
 
             <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get Started</button>
