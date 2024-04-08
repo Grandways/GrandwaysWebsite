@@ -70,3 +70,7 @@ p{
 .teamcard{
   border: 2px solid #F8F9F9;
 }
+
+button{
+  font-family: "Proxima Nova";
+}
