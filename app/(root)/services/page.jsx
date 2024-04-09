@@ -4,6 +4,10 @@ import { PiBroadcastFill } from "react-icons/pi";
 import { IoMegaphoneSharp } from "react-icons/io5";
 import { TbWorldCode } from "react-icons/tb";
 import { MdTablet } from "react-icons/md";
+import Link from "next/link";
+import Image from "next/image";
+import serLeft from "@/public/assets/ser-left.png"
+import serRight from "@/public/assets/ser-right.png"
 
 const Services = () => {
   return (
@@ -13,11 +17,17 @@ const Services = () => {
           <div className="flex flex-col w-1/2 justify-center">
             <h1 className="mb-[15px]">How We<br/>Can Help</h1>
             <p className="w-[470px] mb-[25px]">The Grandways Team consists of a group of resourceful, noble individuals who are humble, highly experienced and hard working.</p>
-            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
+            <Link href={"/contact"}>
+                <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
+            </Link>
           </div>
           <div className="flex flex-col justify-center relative bottom-[10%]">
-            <div className="w-[400px] h-[250px] bg-[#D9D9D9] rounded-[15px] heroimg relative"></div>
-            <div className="w-[400px] h-[250px] bg-[#D9D9D9] rounded-[15px] heroimg absolute z-1 top-[50%] left-[50%]"></div>
+            <div className="w-[400px] h-[250px] bg-[#D9D9D9] rounded-[15px] relative">
+                <Image src={serLeft} alt="" width={400} height={250} className="" />
+            </div>
+            <div className="w-[400px] h-[250px] bg-[#D9D9D9] rounded-[15px] heroimg absolute z-1 top-[50%] left-[50%]">
+                <Image src={serRight} alt="" width={400} height={250} className="" />
+            </div>
           </div>
         </div>
 
@@ -26,14 +36,16 @@ const Services = () => {
             <p className="w-[700px] text-center">
             adbsafbkasjfbakadbsafbkasjfbak adbsafbkasjfbakadbsafbkasjf bakadbsafbkasjfbakadbs afbkasjfbakdkmadbsafbk asjfbakadbsafbkasjfbak adbsafbkasjfbakadbsafb kasjfbakadbsafbkasjfba kadbsafbkasjfbakdkmadb safbkasjfbakadbsafbkas jfbakadbsafbkasjfbakad bsafbkasjfbakadbsafbkasjf<br/><br/> bakadbsafbkasjfbakdkmadbs afbkasjfbakadbsafbkasjfba kadbsafbkas jfbakadbsafb kasjfbakad bsafbkasjfb akadbsafbka sjfbakdkmad bsafbkasjfb akadbsafbka sjfbakadbsa fbkasjfbaka dbsafbkasjf bakadbsafbkasjfb akadbsafbkasjfbak dkmadbsafbkasjfba kadbsafbkasjfbaka dbsafbkasjfbakadb safbkasjfbakadbsafbkasjfbakadbs afbkasjfbakdkmadbsafbkasjfba kadbsafbkasjfbakadbsafbkasjf bakadbsafbkasjfbak adbsafbkasjfbaka dbsaf bkasjfbakdk madbsafbkasjfbakadbsa fbkasjfbakadbsa fbkasjfbakadbs.
             </p>
-            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get Started</button>
+            <Link href={"/contact"}>
+                <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get Started</button>
+            </Link>
         </div>
 
         <div className="w-full flex flex-col bg-[#F8F9F9] gap-[50px] px-[135px] py-[50px]">
             <h2 className="text-center">What We Offer</h2>
             <div className="flex flex-col items-center gap-[25px]">
                 <div className="flex gap-[25px]">
-                    <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+                    <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                         <FaRegLightbulb className="text-[#222952] w-[100px] h-[100px]" />
                         <div className="flex flex-col gap-[10px]">
                             <p className="text-[24px]">Strategy Development</p>
@@ -47,7 +59,7 @@ const Services = () => {
                         </div>
                     </div>
                     
-                    <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+                    <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                         <RiOrganizationChart className="text-[#222952] w-[100px] h-[100px]" />
                         <div className="flex flex-col gap-[10px]">
                             <p className="text-[24px]">Event Management & Coordination</p>
@@ -63,7 +75,7 @@ const Services = () => {
                 </div>
                 
                 <div className="flex gap-[25px]">
-                    <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+                    <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                         <PiBroadcastFill className="text-[#222952] w-[100px] h-[100px]" />
                         <div className="flex flex-col gap-[10px]">
                             <p className="text-[24px]">Media Management & Coordination</p>
@@ -76,7 +88,7 @@ const Services = () => {
                         </div>
                     </div>
                     
-                    <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+                    <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                         <IoMegaphoneSharp className="text-[#222952] w-[100px] h-[100px]" />
                         <div className="flex flex-col gap-[10px]">
                             <p className="text-[24px]">Publications Design & Printing</p>
@@ -92,7 +104,7 @@ const Services = () => {
                 </div>
                 
                 <div className="flex gap-[25px]">
-                    <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+                    <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                         <FaRegIdCard className="text-[#222952] w-[100px] h-[100px]" />
                         <div className="flex flex-col gap-[10px]">
                             <p className="text-[24px]">Brand Identity</p>
@@ -106,7 +118,7 @@ const Services = () => {
                         </div>
                     </div>
                     
-                    <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+                    <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                         <TbWorldCode className="text-[#222952] w-[100px] h-[100px]" />
                         <div className="flex flex-col gap-[10px]">
                             <p className="text-[24px]">Website</p>
@@ -120,7 +132,7 @@ const Services = () => {
                     </div>
                 </div>
                 
-                <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+                <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                     <MdTablet className="text-[#222952] w-[100px] h-[100px]" />
                     <div className="flex flex-col gap-[10px]">
                         <p className="text-[24px]">Digital Media</p>
@@ -134,14 +146,18 @@ const Services = () => {
                     </div>
                 </div>
 
-                <button className="w-[150px] h-[50px] mt-[25px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get Started</button>
+                <Link href={"/contact"}>
+                    <button className="w-[150px] h-[50px] mt-[25px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get Started</button>
+                </Link>
             </div>
         </div>
 
         <div className="flex flex-col items-center px-[135px] py-[50px]">
             <h2 className="text-center mb-[50px]">Get In Touch</h2>
             <p className="w-[700px] text-center mb-[25px]">Let us transform your business, Let us transform your business, Let us transform your business, Let us transform your business, Let us transform your business</p>
-            <button className="w-[150px] h-[50px] mt-[25px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get In Touch</button>
+            <Link href={"/contact"}>
+                <button className="w-[150px] h-[50px] mt-[25px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get In Touch</button>
+            </Link>
         </div>
       </div>
     </>

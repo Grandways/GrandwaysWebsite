@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
                 <h2>Get In Touch</h2>
                 <div className="flex flex-col gap-[25px]">
                     <p>
-                        Send us a quick message and we’ll get back to you as soon as we can. Alternatively you can email – sales@grandways.co.bw
+                        Send us a quick message and we’ll get back to you as soon as we can. Alternatively you can email – <Link href={`mailto:${'sales@grandways.co.bw'}`}><span className="font-bold text-[#222952]">sales@grandways.co.bw</span></Link>
                     </p>
                     <p>
                         You can reach us from:<br/>08:30-18:00 Monday to Friday<br/>09:00-13:00 Saturdays<br/>We are CLOSED on Sundays
@@ -18,7 +18,7 @@ const Contact = () => {
 
                 <div className="flex flex-col gap-[25px]">
                     <p>
-                        (+267) 311 4567<br/>sales@grandways.co.bw
+                        (+267) 311 4567<br/><Link href={`mailto:${'sales@grandways.co.bw'}`}><span className="font-bold text-[#222952]">sales@grandways.co.bw</span></Link>
                     </p>
                     <p>
                         Plot 75748 Setlhoa Showrooms, Unit 4<br/>Setlhoa, Gaborone

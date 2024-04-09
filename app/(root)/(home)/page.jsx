@@ -3,6 +3,16 @@ import Link from "next/link";
 import { FaRegLightbulb, FaRegIdCard } from "react-icons/fa";
 import { FaPerson } from "react-icons/fa6";
 import { IoMegaphoneSharp } from "react-icons/io5";
+import turnst from "@/public/assets/turnst-logo.png"
+import cll from "@/public/assets/cll-logo.png"
+import kbl from "@/public/assets/kbl-logo.png"
+import nbd from "@/public/assets/nbd-logo.png"
+import misa from "@/public/assets/misa-logo.png"
+import guc from "@/public/assets/guc-logo.png"
+import hLeft from "@/public/assets/h-left.png"
+import hMid from "@/public/assets/h-mid.png"
+import hRight from "@/public/assets/h-right.png"
+import aSec from "@/public/assets/a-sec.png"
 
 export default function Home() {
   return (
@@ -14,12 +24,20 @@ export default function Home() {
             For <span className="italic">all your <span className="font-bold">marketing & advertising</span></span> needs, The next generation of the<br/>advertising world.
           </h2>
 
-          <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
+          <Link href={"/contact"}>
+            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
+          </Link>
 
           <div className="flex justify-center relative">
-            <div className="w-[370px] h-[225px] bg-[#D9D9D9] heroimg rounded-[15px] absolute z-2 left-[280px] top-[150px]"></div>
-            <div className="w-[370px] h-[450px] bg-[#D1D1D1] heroimg rounded-[15px]"></div>
-            <div className="w-[370px] h-[225px] bg-[#D9D9D9] heroimg rounded-[15px] absolute z-2 right-[280px] top-[75px]"></div>
+            <div className="w-[370px] h-[225px] bg-[#D9D9D9] heroimg rounded-[15px] absolute z-2 left-[280px] top-[150px]">
+              <Image src={hLeft} alt="" width={370} height={225} className="" />
+            </div>
+            <div className="w-[370px] h-[450px] bg-[#D1D1D1] heroimg rounded-[15px]">
+              <Image src={hMid} alt="" width={370} height={225} className="" />
+            </div>
+            <div className="w-[370px] h-[225px] bg-[#D9D9D9] heroimg rounded-[15px] absolute z-2 right-[280px] top-[75px]">
+              <Image src={hRight} alt="" width={370} height={225} className="" />
+            </div>
           </div>
         </div>
 
@@ -38,7 +56,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-[370px] h-[200px] bg-[#EAE8E8] ml-[90px] rounded-[15px]"></div>
+            <div className="w-[370px] h-[200px] bg-[#EAE8E8] ml-[90px] rounded-[15px] flex items-center justify-center overflow-hidden">
+              <Image src={aSec} alt="" width={370} height={200} className="" />
+            </div>
           </div>
         </div>
 
@@ -47,7 +67,7 @@ export default function Home() {
           <div className="flex flex-col gap-[20px] mb-[50px]">
 
             <div className="flex gap-[25px]">
-              <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+              <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                 <FaRegLightbulb className="text-[#222952] w-[100px] h-[100px]" />
                 <div className="flex flex-col gap-[10px]">
                   <p className="text-[24px]">Strategy Development</p>
@@ -55,7 +75,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+              <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                 <FaRegIdCard className="text-[#222952] w-[100px] h-[100px]" />
                 <div className="flex flex-col gap-[10px]">
                   <p className="text-[24px]">Brand Identity</p>
@@ -65,7 +85,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-[25px]">
-              <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+              <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                 <FaPerson className="text-[#222952] w-[100px] h-[100px]" />
                 <div className="flex flex-col gap-[10px]">
                   <p className="text-[24px]">Merchandise</p>
@@ -73,7 +93,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
+              <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px]">
                 <IoMegaphoneSharp className="text-[#222952] w-[100px] h-[100px]" />
                 <div className="flex flex-col gap-[10px]">
                   <p className="text-[24px]">Activations & Publications</p>
@@ -83,23 +103,39 @@ export default function Home() {
             </div>
           </div>
 
-          <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">View Services</button>
+          <Link href={"/services"}>
+            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">View Services</button>
+          </Link>
         </div>
 
         <div className="w-full py-[50px] px-[135px]">
           <h2 className="mb-[25px]">Our Giants</h2>
           <div className="flex justify-between">
             <p className="w-1/2 mb-[50px]">Use this space to promote the business, its products or its services. Help people become familiar with the business and its offerings, creating a sense of connection and trust. Focus on what makes the business unique and how users can benefit from choosing it.</p>
-            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Work With Us</button>
+            <Link href={"/contact"}>
+              <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Work With Us</button>
+            </Link>
           </div>
 
           <div className="w-full h-[150px] bg-[#F8F9F9] flex justify-between items-center rounded-[15px] p-[25px]">
-            <div className="bg-white w-[150px] h-[100px] rounded-[7.5px]"></div>
-            <div className="bg-white w-[150px] h-[100px] rounded-[7.5px]"></div>
-            <div className="bg-white w-[150px] h-[100px] rounded-[7.5px]"></div>
-            <div className="bg-white w-[150px] h-[100px] rounded-[7.5px]"></div>
-            <div className="bg-white w-[150px] h-[100px] rounded-[7.5px]"></div>
-            <div className="bg-white w-[150px] h-[100px] rounded-[7.5px]"></div>
+            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
+              <Image src={turnst} alt="turnstar logo" width={150} height={100} />
+            </div>
+            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
+              <Image src={cll} alt="" width={150} height={100} />
+            </div>
+            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
+              <Image src={kbl} alt="" width={150} height={100} />
+            </div>
+            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
+              <Image src={nbd} alt="" width={150} height={100} />
+            </div>
+            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
+              <Image src={misa} alt="" width={150} height={100} />
+            </div>
+            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
+              <Image src={guc} alt="" width={150} height={100} />
+            </div>
           </div>
         </div>
       </div>  
