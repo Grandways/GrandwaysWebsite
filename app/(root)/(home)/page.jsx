@@ -14,6 +14,11 @@ import hMid from "@/public/assets/h-mid.png"
 import hRight from "@/public/assets/h-right.png"
 import aSec from "@/public/assets/a-sec.png"
 
+export const metadata = {
+  title: "Grandways - Brilliant Minds, Expect More",
+  description: ""
+}
+
 export default function Home() {
   return (
     <>
