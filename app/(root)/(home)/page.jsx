@@ -116,7 +116,7 @@ export default function Home() {
         <div className="w-full py-[50px] px-[135px]">
           <h2 className="mb-[25px]">Our Giants</h2>
           <div className="flex justify-between">
-            <p className="w-1/2 mb-[50px]">Use this space to promote the business, its products or its services. Help people become familiar with the business and its offerings, creating a sense of connection and trust. Focus on what makes the business unique and how users can benefit from choosing it.</p>
+            <p className="w-1/2 mb-[50px]">Celebrate our valued partnerships with leading brands. Appreciating the companies we've collaborated with, each representing a successful journey in marketing and advertising. Together, we've achieved remarkable results and fueled growth for our clients.</p>
             <Link href={"/contact"}>
               <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Work With Us</button>
             </Link>

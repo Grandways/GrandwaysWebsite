@@ -31,7 +31,7 @@ const About = () => {
         <div className="w-full px-[135px] py-[50px] flex justify-between">
           <div className="flex flex-col items-center gap-[15px]">
             <p className="text-[36px] text-[#222952] font-bold">368</p>
-            <p className="text-[24px]">Clientele</p>
+            <p className="text-[24px]">Clientèle</p>
           </div>
           <div className="flex flex-col items-center gap-[15px]">
             <p className="text-[36px] text-[#222952] font-bold">99%</p>
@@ -39,7 +39,7 @@ const About = () => {
           </div>
           <div className="flex flex-col items-center gap-[15px]">
             <p className="text-[36px] text-[#222952] font-bold">850</p>
-            <p className="text-[24px]">Projects Conpleted</p>
+            <p className="text-[24px]">Projects Completed</p>
           </div>
           <div className="flex flex-col items-center gap-[15px]">
             <p className="text-[36px] text-[#222952] font-bold">100%</p>

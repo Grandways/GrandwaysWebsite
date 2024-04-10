@@ -1,4 +1,5 @@
 import Link from "next/link"
+import supabase from "@/app/config/supabaseClient"
 
 const Contact = () => {
   return (
@@ -26,7 +27,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="w-1/2 flex">
-                <div className="w-[570px] h-[600px] flex flex-col justify-between gap-[10px] bg-white rounded-[15px] p-[25px]">
+                <form className="w-[570px] h-[600px] flex flex-col justify-between gap-[10px] bg-white rounded-[15px] p-[25px]">
                     <div className="flex flex-col gap-[10px]">
                         <p>First Name*</p>
                         <input type="text" className="w-full h-[40px] rounded-[7.5px] bg-[#F8F9F9] px-[10px]" required />
@@ -49,7 +50,7 @@ const Contact = () => {
                     </div>
 
                     <button className="w-full h-[40px] bg-transparent text-[18px] border-[1px] border-black rounded-[7.5px]">Submit</button>
-                </div>
+                </form>
             </div>
         </div>
       </div>

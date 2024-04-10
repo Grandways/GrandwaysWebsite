@@ -16,7 +16,7 @@ const Services = () => {
         <div className="w-full h-[700px] bg-[#F8F9F9] px-[135px] flex">
           <div className="flex flex-col w-1/2 justify-center">
             <h1 className="mb-[15px]">How We<br/>Can Help</h1>
-            <p className="w-[470px] mb-[25px]">The Grandways Team consists of a group of resourceful, noble individuals who are humble, highly experienced and hard working.</p>
+            <p className="w-[470px] mb-[25px]">Elevate your brand with our expertise. Explore tailored marketing and advertising solutions for success. Unlock your business' potential with our services.</p>
             <Link href={"/contact"}>
                 <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
             </Link>
@@ -33,9 +33,11 @@ const Services = () => {
 
         <div className="w-full flex flex-col items-center px-[135px] py-[50px] gap-[50px]">
             <h2 className="text-center">How Do You Benefit?</h2>
-            <p className="w-[700px] text-center">
-            adbsafbkasjfbakadbsafbkasjfbak adbsafbkasjfbakadbsafbkasjf bakadbsafbkasjfbakadbs afbkasjfbakdkmadbsafbk asjfbakadbsafbkasjfbak adbsafbkasjfbakadbsafb kasjfbakadbsafbkasjfba kadbsafbkasjfbakdkmadb safbkasjfbakadbsafbkas jfbakadbsafbkasjfbakad bsafbkasjfbakadbsafbkasjf<br/><br/> bakadbsafbkasjfbakdkmadbs afbkasjfbakadbsafbkasjfba kadbsafbkas jfbakadbsafb kasjfbakad bsafbkasjfb akadbsafbka sjfbakdkmad bsafbkasjfb akadbsafbka sjfbakadbsa fbkasjfbaka dbsafbkasjf bakadbsafbkasjfb akadbsafbkasjfbak dkmadbsafbkasjfba kadbsafbkasjfbaka dbsafbkasjfbakadb safbkasjfbakadbsafbkasjfbakadbs afbkasjfbakdkmadbsafbkasjfba kadbsafbkasjfbakadbsafbkasjf bakadbsafbkasjfbak adbsafbkasjfbaka dbsaf bkasjfbakdk madbsafbkasjfbakadbsa fbkasjfbakadbsa fbkasjfbakadbs.
-            </p>
+            <div className="flex flex-col gap-[35px]">
+                <p className="w-[700px] text-center">Discover the advantages of partnering with our marketing and advertising agency. By leveraging our expertise, you gain access to strategic insights and innovative solutions tailored to your brand's unique needs. From targeted campaigns to cutting-edge techniques, we're dedicated to maximizing your ROI and driving sustainable growth.</p>
+                
+                <p className="w-[700px] text-center">Experience the difference of working with a team committed to your success. With our collaborative approach, transparent communication, and data-driven strategies, we ensure that every initiative is aligned with your goals. Whether you're looking to increase brand awareness, drive conversions, or expand your market reach, we're here to empower your business and exceed your expectations.</p>
+            </div>
             <Link href={"/contact"}>
                 <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get Started</button>
             </Link>
@@ -154,7 +156,7 @@ const Services = () => {
 
         <div className="flex flex-col items-center px-[135px] py-[50px]">
             <h2 className="text-center mb-[50px]">Get In Touch</h2>
-            <p className="w-[700px] text-center mb-[25px]">Let us transform your business, Let us transform your business, Let us transform your business, Let us transform your business, Let us transform your business</p>
+            <p className="w-[700px] text-center mb-[25px]">Ready to elevate your marketing efforts? Get in touch with us today for tailored strategies that drive results. Let's collaborate and propel your brand forward together.</p>
             <Link href={"/contact"}>
                 <button className="w-[150px] h-[50px] mt-[25px] rounded-[25px] border-[1px] border-[#000000] border-solid">Get In Touch</button>
             </Link>
