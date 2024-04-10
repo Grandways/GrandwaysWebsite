@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <div>
-        <div className="w-full h-[700px] bg-[#F8F9F9] px-[135px] flex">
+        <div className="w-full h-[700px] bg-[#DADADA] px-[135px] flex">
           <div className="flex flex-col w-1/2 justify-center">
             <h1 className="mb-[15px]">We Go The<br/>Extra Mile</h1>
             <p className="w-[470px] mb-[25px]">The Grandways Team consists of a group of resourceful, noble individuals who are humble, highly experienced and hard working.</p>
@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center px-[135px] py-[50px] bg-[#F8F9F9] gap-[50px]">
+        <div className="w-full flex flex-col items-center px-[135px] py-[50px] bg-[#DADADA] gap-[50px]">
           <div className="flex gap-[25px] relative">
             <p className="w-1/2 text-[24px]">We go the extra mile for our clients, hence our brand mantra: Brilliant Minds. Expect More</p>
             <div className="flex relative w-1/2">

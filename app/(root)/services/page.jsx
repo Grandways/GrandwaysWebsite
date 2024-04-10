@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <>
       <div>
-        <div className="w-full h-[700px] bg-[#F8F9F9] px-[135px] flex">
+        <div className="w-full h-[700px] bg-[#DADADA] px-[135px] flex">
           <div className="flex flex-col w-1/2 justify-center">
             <h1 className="mb-[15px]">How We<br/>Can Help</h1>
             <p className="w-[470px] mb-[25px]">Elevate your brand with our expertise. Explore tailored marketing and advertising solutions for success. Unlock your business' potential with our services.</p>
@@ -43,7 +43,7 @@ const Services = () => {
             </Link>
         </div>
 
-        <div className="w-full flex flex-col bg-[#F8F9F9] gap-[50px] px-[135px] py-[50px]">
+        <div className="w-full flex flex-col bg-[#DADADA] gap-[50px] px-[135px] py-[50px]">
             <h2 className="text-center">What We Offer</h2>
             <div className="flex flex-col items-center gap-[25px]">
                 <div className="flex gap-[25px]">
