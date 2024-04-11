@@ -15,7 +15,7 @@ const Services = () => {
       <div>
         <div className="w-full h-[700px] bg-[#f0f0f0] px-[135px] flex max-md:px-[16px]">
           <div className="flex flex-col w-1/2 justify-center max-md:w-full max-md:items-center max-md:gap-[25px]">
-            <h1 className="mb-[15px] max-md:text-[54px] max-md:text-center">How We<br/>Can Help</h1>
+            <h1 className="mb-[15px] max-md:text-[54px] max-md:text-center ">How We<br/>Can Help</h1>
             <p className="w-[470px] mb-[25px] max-md:text-[16px] max-md:text-center max-md:w-[300px]">Elevate your brand with our expertise. Explore tailored marketing and advertising solutions for success. Unlock your business' potential with our services.</p>
             <Link href={"/contact"}>
                 <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
@@ -31,7 +31,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center px-[135px] py-[50px] gap-[50px]">
+        <div className="w-full flex flex-col items-center px-[135px] py-[50px] gap-[50px] max-md:px-[16px]">
             <h2 className="text-center max-md:text-[36px]">How Do You Benefit?</h2>
             <div className="flex flex-col gap-[35px]">
                 <p className="w-[700px] text-center max-md:text-[16px] max-md:w-[300px]">Discover the advantages of partnering with our marketing and advertising agency. By leveraging our expertise, you gain access to strategic insights and innovative solutions tailored to your brand's unique needs. From targeted campaigns to cutting-edge techniques, we're dedicated to maximizing your ROI and driving sustainable growth.</p>
@@ -43,7 +43,7 @@ const Services = () => {
             </Link>
         </div>
 
-        <div className="w-full flex flex-col bg-[#f0f0f0] gap-[50px] px-[135px] py-[50px]">
+        <div className="w-full flex flex-col bg-[#f0f0f0] gap-[50px] px-[135px] py-[50px] max-md:px-[16px]">
             <h2 className="text-center max-md:text-[36px]">What We Offer</h2>
             <div className="flex flex-col items-center gap-[25px]">
                 <div className="flex gap-[25px] max-md:flex-col">
@@ -154,7 +154,7 @@ const Services = () => {
             </div>
         </div>
 
-        <div className="flex flex-col items-center px-[135px] py-[50px]">
+        <div className="flex flex-col items-center px-[135px] py-[50px] max-md:px-[16px]">
             <h2 className="text-center mb-[50px] max-md:text-[36px]">Get In Touch</h2>
             <p className="w-[700px] text-center mb-[25px] max-md:text-[16px] max-md:w-[300px]">Ready to elevate your marketing efforts? Get in touch with us today for tailored strategies that drive results. Let's collaborate and propel your brand forward together.</p>
             <Link href={"/contact"}>

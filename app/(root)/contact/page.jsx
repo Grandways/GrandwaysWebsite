@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <>
       <div>
-        <div className="w-full h-[700px] flex px-[135px] py-[50px] bg-[#f0f0f0] max-md:flex-col max-md:h-fit max-md:gap-[50px]">
+        <div className="w-full h-[700px] flex px-[135px] py-[50px] bg-[#f0f0f0] max-md:flex-col max-md:h-fit max-md:gap-[50px] max-md:px-[16px]">
             <div className="w-1/2 flex flex-col gap-[50px] max-md:w-full">
                 <h2 className="max-md:text-[36px] max-md:text-center">Get In Touch</h2>
                 <div className="flex flex-col gap-[25px]">
