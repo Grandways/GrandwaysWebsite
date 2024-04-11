@@ -50,13 +50,13 @@ export default function Home() {
           <h2 className="mt-[50px] mb-[25px] max-md:text-[36px]">About</h2>
           <div className="flex mb-[50px]">
             <div>
-              <p className="w-[700px] max-md:w-[250px] max-md:text-center max-md:text-[16px]">
+              <p className="w-[700px] max-md:w-[300px] max-md:text-center max-md:text-[16px]">
                   At Grandways, we transform businesses, brands, and organisations through the use of visual and emotive connections, aiming to create a lasting commercial and social impact. We go the extra mile for our clients, hence the mantra; Brilliant Minds, Expect More.
                 <br/><br/>
                   The GrandTeam consists of a group of resourceful, noble individuals, who are humble, highly experienced, and hardworking in the following fields:
               </p>
 
-              <p className="font-bold w-[700px] max-md:w-[250px] max-md:text-center max-md:text-[16px]">
+              <p className="font-bold w-[700px] max-md:w-[300px] max-md:text-center max-md:text-[16px]">
                   Graphic Design and Animation | Production and Quality Assurance | Brand Strategy | Public Relations and Media Specialist | Copy Writing | Publication
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center py-[50px] bg-[#DADADA] max-md:px-[16px] max-md:py-[25px]">
+        <div className="w-full flex flex-col items-center py-[50px] bg-[#f0f0f0] max-md:px-[16px] max-md:py-[25px]">
           <h2 className="mb-[50px] max-md:text-[36px]">Our Services</h2>
           <div className="flex flex-col gap-[20px] mb-[50px]">
 
@@ -122,7 +122,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="w-full h-[150px] bg-[#DADADA] flex justify-between items-center rounded-[15px] p-[25px] max-md:flex-col max-md:w-[200px] max-md:h-full max-md:gap-[15px]">
+          <div className="w-full h-[150px] bg-[#f0f0f0] flex justify-between items-center rounded-[15px] p-[25px] max-md:flex-col max-md:w-[200px] max-md:h-full max-md:gap-[15px]">
             <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
               <Image src={turnst} alt="turnstar logo" width={150} height={100} />
             </div>

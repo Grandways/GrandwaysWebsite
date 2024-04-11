@@ -29,7 +29,7 @@ export function Navbar(){
 
 export function Footer(){
     return(
-        <div className="px-[135px] py-[25px] w-full h-[300px] flex flex-col justify-center bg-[#F8F9F9] max-md:px-[16px] max-md:h-fit max-md:items-center max-md:gap-[25px]">
+        <div className="px-[135px] py-[25px] w-full h-[300px] flex flex-col justify-center bg-[#f0f0f0] max-md:px-[16px] max-md:h-fit max-md:items-center max-md:gap-[25px]">
             <div className="flex justify-between items-start max-md:flex-col max-md:gap-[25px] max-md:items-center">
                 <Link href={"/"}>
                     <Image src={logo} alt="Grandways Logo" width={334} height={75} className="cursor-pointer max-md:w-[250px] max-md:h-[56px]" />
