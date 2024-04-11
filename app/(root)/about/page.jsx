@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <div>
-        <div className="w-full h-[700px] bg-[#f0f0f0] px-[135px] flex">
+        <div className="w-full h-[700px] bg-[#f0f0f0] px-[135px] flex max-md:px-[16px]">
           <div className="flex flex-col w-1/2 justify-center max-md:w-full max-md:items-center max-md:gap-[25px]">
             <h1 className="mb-[15px] max-md:text-[54px] max-md:text-center">We Go The<br/>Extra Mile</h1>
             <p className="w-[470px] mb-[25px] max-md:text-[16px] max-md:w-[300px] text-center">The Grandways Team consists of a group of resourceful, noble individuals who are humble, highly experienced and hard working.</p>
@@ -47,10 +47,10 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center px-[135px] py-[50px] bg-[#f0f0f0] gap-[50px]">
+        <div className="w-full flex flex-col items-center px-[135px] py-[50px] bg-[#f0f0f0] gap-[50px] max-md:px-[16px]">
           <div className="flex gap-[25px] relative max-md:flex-col">
-            <p className="w-1/2 text-[24px] max-md:w-full max-md:text-[16px] max-md:text-center">We go the extra mile for our clients, hence our brand mantra: Brilliant Minds. Expect More</p>
-            <div className="flex relative w-1/2 max-md:w-full">
+            <p className="w-1/2 text-[24px] max-md:w-[300px] max-md:text-[16px] max-md:text-center">We go the extra mile for our clients, hence our brand mantra: Brilliant Minds. Expect More</p>
+            <div className="flex relative w-1/2 max-md:w-[300px]">
               <p className="text-[24px] max-md:text-[16px] max-md:text-center">“The business that considers itself immune to the necessity of advertising, sooner or later finds itself immune to business” - Derby Brown</p>
               <Image src={quote} alt="quote" width={120} height={200} className="absolute z-0 left-[80%] max-md:w-[60px] max-md:h-[50px]" />
             </div>
