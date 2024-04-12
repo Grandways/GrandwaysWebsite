@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import logo from "@/public/assets/logo.png"
 import { FaRegCopyright } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 
 export function Navbar(){
     return(
@@ -54,13 +55,22 @@ export function Footer(){
                     </div>
                     <div className="flex flex-col max-md:items-center">
                         <p className="text-[24px] mb-[25px] max-md:text-[18px] max-md:mb-[15px]">Social</p>
-                        <div className="flex flex-col gap-[5px] max-md:items-center">
+                        <div className="flex flex-col gap-[10px] max-md:items-center">
                             <Link target="blank" rel="noopener" href={"https://www.instagram.com/grandwaysbw/"}>
-                                <p className="cursor-pointer">Instagram</p>
+                                <div className="socials">
+                                    <FaInstagram className="w-[20px] h-[20px]" />
+                                </div>
                             </Link>
                             <Link target="blank" rel="noopener" href={"https://www.facebook.com/grandways.co.bw"}>
-                                <p className="cursor-pointer">Facebook</p>
+                                <div className="socials">
+                                    <FaFacebookF className="w-[20px] h-[20px]" />
+                                </div>
                             </Link>
+                            <Link target="blank" rel="noopener" href={"https://www.linkedin.com/company/grandways-investments"}>
+                                <div className="socials">
+                                    <FaLinkedinIn className="w-[20px] h-[20px]" />
+                                </div>
+                            </Link>                            
                         </div>
                     </div>
                 </div>

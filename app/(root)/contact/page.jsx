@@ -29,10 +29,10 @@ const Contact = () => {
                 <h2 className="max-md:text-[36px] max-md:text-center">Get In Touch</h2>
                 <div className="flex flex-col gap-[25px]">
                     <p className="max-md:text-[16px] max-md:text-center">
-                        Send us a quick message and we’ll get back to you as soon as we can. Alternatively you can email – <Link href={`mailto:${'sales@grandways.co.bw'}`}><span className="font-bold text-[#222952]">sales@grandways.co.bw</span></Link>
+                        Send us a quick message and we’ll get back to you as soon as we can. Alternatively, you can email – <Link href={`mailto:${'sales@grandways.co.bw'}`}><span className="font-bold text-[#222952]">sales@grandways.co.bw</span></Link>
                     </p>
                     <p className="max-md:text-[16px] max-md:text-center">
-                        You can reach us from:<br/>08:30-18:00 Monday to Friday<br/>09:00-13:00 Saturdays<br/>We are CLOSED on Sundays
+                        You can reach us from:<br/>08:00-17:00 Monday to Friday<br/>We are CLOSED on Saturdays & Sundays
                     </p>
                 </div>
 

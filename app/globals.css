@@ -65,6 +65,7 @@ p{
 
 .heroimg{
   border: 3px solid white;
+  overflow: hidden;
 }
 
 .teamcard{
@@ -111,4 +112,23 @@ input{
 
 textarea{
   font-family: "Proxima Nova";
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #222952;
+  color: white;
+}
+
+.socials:hover{
+  transition: ease-in-out;
+  transition-duration: 150ms;
+  background-color: white;
+  color: #222952;
+  border: 2px solid #222952;
 }
