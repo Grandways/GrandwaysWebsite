@@ -69,10 +69,10 @@ export default function Home() {
 
         <div className="w-full flex flex-col items-center py-[50px] bg-[#f0f0f0] max-md:px-[16px] max-md:py-[25px]">
           <h2 className="mb-[50px] max-md:text-[36px]">Our Services</h2>
-          <div className="flex flex-col mb-[50px] max-md:gap-[50px]">
+          <div className="flex flex-col gap-[20px] mb-[50px]">
 
-            <div className="flex mb-[25px] max-md:flex-col">
-              <div className="services w-[570px] h-[225px] mr-[25px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
+            <div className="flex gap-[25px] max-md:flex-col">
+              <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
                 <FaRegLightbulb className="text-[#222952] w-[100px] h-[100px] max-md:hidden" />
                 <div className="flex flex-col gap-[10px]">
                   <p className="text-[24px] max-md:text-[18px]">Strategy Development</p>
@@ -89,8 +89,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex max-md:flex-col">
-              <div className="services w-[570px] mr-[25px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
+            <div className="flex gap-[25px] max-md:flex-col">
+              <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
                 <FaPerson className="text-[#222952] w-[100px] h-[100px] max-md:hidden" />
                 <div className="flex flex-col gap-[10px]">
                   <p className="text-[24px] max-md:text-[18px]">Merchandise</p>
