@@ -73,6 +73,7 @@ p{
 
 button{
   font-family: "Proxima Nova";
+  background-color: transparent;
 }
 
 button:hover{

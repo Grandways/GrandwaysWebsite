@@ -13,7 +13,7 @@ const About = () => {
         <div className="w-full h-[700px] bg-[#f0f0f0] px-[135px] flex max-md:px-[16px]">
           <div className="flex flex-col w-1/2 justify-center max-md:w-full max-md:items-center max-md:gap-[25px]">
             <h1 className="mb-[15px] max-md:text-[54px] max-md:text-center">We Go The<br/>Extra Mile</h1>
-            <p className="w-[470px] mb-[25px] max-md:text-[16px] max-md:w-[300px] text-center">The Grandways Team consists of a group of resourceful, noble individuals who are humble, highly experienced and hard working.</p>
+            <p className="w-[470px] mb-[25px] max-md:text-[16px] max-md:w-[300px] max-md:text-center">The Grandways Team consists of a group of resourceful, noble individuals who are humble, highly experienced and hard working.</p>
             <Link href={"/contact"}>
               <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
             </Link>
