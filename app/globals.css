@@ -127,7 +127,7 @@ textarea{
 
 .socials:hover{
   transition: ease-in-out;
-  transition-duration: 150ms;
+  transition-duration: 250ms;
   background-color: white;
   color: #222952;
   border: 2px solid #222952;
