@@ -25,8 +25,8 @@ export default function Home() {
       <div>
         <div className="w-full pt-[100px] pb-[50px] flex flex-col items-center max-md:px-[16px]">
           <h1 className="text-center mb-[50px] max-md:text-[48px]">Brilliant Minds,<br/>Expect More</h1>
-          <h2 className="text-center text-[24px] mb-[50px] font-light max-md:text-[18px]">
-            For all your <span className="font-bold">marketing & advertising</span> needs. The next generation of the<br/>advertising world.
+          <h2 className="text-center text-[24px] mb-[50px] font-light w-[700px] max-md:w-[300px] max-md:text-[18px]">
+            For all your <span className="font-bold">marketing & advertising</span> needs. The next generation of the advertising world.
           </h2>
 
           <Link href={"/contact"}>
