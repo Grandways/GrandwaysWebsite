@@ -5,20 +5,36 @@ import supabase from "@/app/config/supabaseClient"
 import { useState } from "react"
 
 const Contact = () => {
-    const [fname, setFname] = useState("")
-    const [lname, setLname] = useState("")
-    const [email, setEmail] = useState("")
-    const [subject, setSubject] = useState("")
-    const [message, setMessage] = useState("")
+    const [form, setForm] = useState([{
+        fname: "",
+        lname: "",
+        email: "",
+        subject: "",
+        message: ""
+    }])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-
-        console.log("First Name: ", fname)
-        console.log("Last Name: ", lname)
-        console.log("Email: ", email)
-        console.log("Subject: ", subject)
-        console.log("Message: ", message)
+        
+        const { data, error } = await supabase
+        .from('form')
+        .insert([
+            {
+                first_name: form.fname,
+                last_name: form.lname,
+                email: form.email,
+                subject: form.subject,
+                message: form.message,
+            }
+        ])
+        .select()
+        
+        if (error) {
+            console.error("there was an error", error)
+        }
+        else {
+            console.log("sent data")
+        }
     }
 
   return (
@@ -51,9 +67,8 @@ const Contact = () => {
                         <p className="max-md:text-[16px]">First Name*</p>
                         <input
                             type="text"
-                            onChange={(e => setFname(e.target.value))}
-                            value={fname}
-                            id="firstname"
+                            onChange={(e => setForm({...form, fname:e.target.value}))}
+                            value={form.fname}
                             className="w-full h-[40px] rounded-[7.5px] bg-[#f0f0f0] px-[10px]" 
                             required />
                     </div>
@@ -61,9 +76,8 @@ const Contact = () => {
                         <p className="max-md:text-[16px]">Last Name*</p>
                         <input
                             type="text"
-                            onChange={(e => setLname(e.target.value))}
-                            value={lname}
-                            id="lastname"
+                            onChange={(e => setForm({...form, lname:e.target.value}))}
+                            value={form.lname}
                             className="w-full h-[40px] rounded-[7.5px] bg-[#f0f0f0] px-[10px]"
                             required />
                     </div>
@@ -71,9 +85,8 @@ const Contact = () => {
                         <p className="max-md:text-[16px]">Email*</p>
                         <input 
                             type="email"
-                            onChange={(e => setEmail(e.target.value))}
-                            value={email}
-                            id="email"
+                            onChange={(e => setForm({...form, email:e.target.value}))}
+                            value={form.email}
                             className="w-full h-[40px] rounded-[7.5px] bg-[#f0f0f0] px-[10px]"
                             required />
                     </div>
@@ -81,19 +94,18 @@ const Contact = () => {
                         <p className="max-md:text-[16px]">Subject*</p>
                         <input
                             type="text"
-                            onChange={(e => setSubject(e.target.value))}
-                            value={subject}
-                            id="subject"
+                            onChange={(e => setForm({...form, subject:e.target.value}))}
+                            value={form.subject}
                             className="w-full h-[40px] rounded-[7.5px] bg-[#f0f0f0] px-[10px]"
                             required />
                     </div>
                     <div className="flex flex-col gap-[10px]">
                         <p className="max-md:text-[16px]">Message*</p>
                         <textarea
-                            onChange={(e => setMessage(e.target.value))}
-                            value={message}
-                            id="message"
-                            className="w-full h-[100px] rounded-[7.5px] bg-[#f0f0f0] px-[10px] py-[5px]" />
+                            onChange={(e => setForm({...form, message:e.target.value}))}
+                            value={form.message}
+                            className="w-full h-[100px] rounded-[7.5px] bg-[#f0f0f0] px-[10px] py-[5px]"
+                        />
                     </div>
 
                     <button
