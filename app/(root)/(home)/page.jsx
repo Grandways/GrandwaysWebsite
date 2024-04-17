@@ -123,25 +123,16 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="w-full h-[150px] bg-[#f0f0f0] flex justify-between items-center rounded-[15px] p-[25px] max-md:flex-col max-md:w-[200px] max-md:h-full max-md:gap-[15px]">
-            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
-              <Image src={nbfira} alt="turnstar logo" width={150} height={100} />
-            </div>
-            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
-              <Image src={cll} alt="" width={150} height={100} />
-            </div>
-            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
-              <Image src={kbl} alt="" width={150} height={100} />
-            </div>
-            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
-              <Image src={oxygas} alt="" width={150} height={100} />
-            </div>
-            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
-              <Image src={bcm} alt="" width={150} height={100} />
-            </div>
-            <div className="bg-white w-[150px] h-[100px] partners rounded-[7.5px] flex items-center justify-center">
-              <Image src={guc} alt="" width={150} height={100} />
-            </div>
+          <div className="w-full h-[150px] bg-[#f0f0f0] flex gap-[30px] justify-between overflow-x-auto overflow-y-hidden items-center rounded-[15px] p-[25px] max-md:flex-col max-md:w-[200px] max-md:h-full max-md:gap-[15px]">
+            <Image src={nbfira} alt="turnstar logo" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={cll} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={kbl} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={oxygas} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={bcm} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
           </div>
         </div>
       </div>  
