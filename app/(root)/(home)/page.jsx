@@ -13,6 +13,8 @@ import hLeft from "@/public/assets/h-left.png"
 import hMid from "@/public/assets/h-mid.jpg"
 import hRight from "@/public/assets/h-right.png"
 import aSec from "@/public/assets/a-sec.png"
+import heroImg from "@/public/assets/heroimg.png"
+import h1 from "@/public/assets/h1.png"
 
 export const metadata = {
   title: "Grandways - Brilliant Minds, Expect More",
@@ -23,26 +25,14 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="w-full pt-[100px] pb-[50px] flex flex-col items-center max-md:px-[16px]">
-          <h1 className="text-center mb-[50px] max-md:text-[48px]">Brilliant Minds,<br/>Expect More</h1>
-          <h2 className="text-center text-[24px] mb-[50px] font-light w-[700px] max-md:w-[300px] max-md:text-[18px]">
-            For all your <span className="font-bold">marketing & advertising</span> needs. The next generation of the advertising world.
-          </h2>
-
-          <Link href={"/contact"}>
-            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">Get Started</button>
-          </Link>
-
-          <div className="flex justify-center relative">
-            <div className="w-[370px] h-[225px] bg-[#D9D9D9] heroimg rounded-[15px] absolute z-2 left-[280px] top-[275px] max-md:w-[128px] max-md:h-[78px] max-md:left-[100px] max-md:top-[50px]">
-              <Image src={hLeft} alt="" width={370} height={225} />
-            </div>
-            <div className="w-[370px] h-[450px] bg-[#D1D1D1] flex items-center justify-center heroimg rounded-[15px] max-md:w-[129px] max-md:h-[156px]">
-              <Image src={hMid} alt="" className="w-fit h-fit" />
-            </div>
-            <div className="w-[370px] h-[225px] bg-[#D9D9D9] heroimg rounded-[15px] absolute z-2 right-[280px] top-[75px] max-md:w-[128px] max-md:h-[78px] max-md:right-[100px] max-md:top-[25px]">
-              <Image src={hRight} alt="" className="w-fit h-fit" />
-            </div>
+        <div className="w-full h-[700px] bg-[#000000] flex items-center max-md:px-[16px] px-[135px]">
+          <div>
+            <Image src={heroImg} width={530} height={530} alt="" className="" />
+          </div>
+          <hr className="w-[300px] rotate-90 text-white" />
+          <div className="relative">
+            <p className="text-[24px] italic text-white w-[500px] translate-y-[-50px]">We believe in your explosive ideas, begin your journey with us...</p>
+            <Image src={h1} width={840} height={365} alt="" className="absolute z-10 translate-x-[-100px] translate-y-[-100px]" />
           </div>
         </div>
 
