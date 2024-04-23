@@ -15,6 +15,17 @@ import hRight from "@/public/assets/h-right.png"
 import aSec from "@/public/assets/a-sec.png"
 import heroImg from "@/public/assets/heroimg.png"
 import h1 from "@/public/assets/h1.png"
+import acca from "@/public/assets/acca.png"
+import baoa from "@/public/assets/baoa.png"
+import bokomo from "@/public/assets/bokomo.png"
+import bomaid from "@/public/assets/bomaid.png"
+import botusafe from "@/public/assets/botusafe.png"
+import nacb from "@/public/assets/nacb.png"
+import ndb from "@/public/assets/ndb.png"
+import orthosurge from "@/public/assets/orthosurge.png"
+import sadc from "@/public/assets/sadc.png"
+import ub from "@/public/assets/ub.png"
+import zeta from "@/public/assets/zeta.png"
 
 export const metadata = {
   title: "Grandways - Brilliant Minds, Expect More",
@@ -120,9 +131,17 @@ export default function Home() {
               <Image src={oxygas} alt="" width={150} height={100} className="rounded-[5px] partners" />
               <Image src={bcm} alt="" width={150} height={100} className="rounded-[5px] partners" />
               <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={acca} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={baoa} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={bokomo} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={bomaid} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={botusafe} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={nacb} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={ndb} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={orthosurge} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={sadc} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={ub} alt="" width={150} height={100} className="rounded-[5px] partners" />
+              <Image src={zeta} alt="" width={150} height={100} className="rounded-[5px] partners" />
           </div>
         </div>
       </div>  
