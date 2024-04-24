@@ -41,7 +41,7 @@ const Contact = () => {
     <>
       <div>
         <div className="w-full h-[700px] flex px-[135px] py-[50px] bg-[#f0f0f0] max-md:flex-col max-md:h-fit max-md:gap-[50px] max-md:px-[16px]">
-            <div className="w-1/2 flex flex-col gap-[50px] max-md:w-full">
+            <div className="w-1/2 flex flex-col gap-[25px] max-md:w-full">
                 <h2 className="max-md:text-[36px] max-md:text-center">Get In Touch</h2>
                 <div className="flex flex-col gap-[25px]">
                     <p className="max-md:text-[16px] max-md:text-center">
@@ -56,8 +56,14 @@ const Contact = () => {
                     <p className="max-md:text-[16px] max-md:text-center">
                         (+267) 311 4567<br/><Link href={`mailto:${'sales@grandways.co.bw'}`}><span className="font-bold text-[#222952]">sales@grandways.co.bw</span></Link>
                     </p>
+
+                    <p className="text-[24px]">Our Locations</p>
+
                     <p className="max-md:text-[16px] max-md:text-center">
-                        Plot 75748 Setlhoa Showrooms, Unit 4<br/>Setlhoa, Gaborone
+                        Plot 75748 Setlhoa Showrooms, Unit 4 Setlhoa,<br/>Gaborone, <span className="font-bold">Botswana</span>
+                    </p>
+                    <p className="max-md:text-[16px] max-md:text-center">
+                        Moon Star Complex, First Floor, Room 12,<br/>Maseru, <span className="font-bold">Lesotho</span>
                     </p>
                 </div>
             </div>
