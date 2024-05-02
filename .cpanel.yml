@@ -12,7 +12,8 @@ directories:
   include:
     # Include all directories except .env
     - public_html
-    - src
+    - app
+    - public
     - assets
     - styles
   exclude:
