@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.42.0",
@@ -14,6 +13,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
+    "sharp": "^0.33.3",
     "supabase": "^1.153.4"
   },
   "devDependencies": {
