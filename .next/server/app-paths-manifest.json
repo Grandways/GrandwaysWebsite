@@ -1,7 +1,5 @@
 {
-  "/(root)/about/page": "app/(root)/about/page.js",
-  "/(root)/services/page": "app/(root)/services/page.js",
-  "/not-found": "app/not-found.js",
   "/(root)/(home)/page": "app/(root)/(home)/page.js",
+  "/not-found": "app/not-found.js",
   "/(root)/portfolio/page": "app/(root)/portfolio/page.js"
 }
