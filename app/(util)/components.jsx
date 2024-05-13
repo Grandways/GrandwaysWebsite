@@ -20,6 +20,9 @@ export function Navbar(){
             <Link href={"/services"}>
                 <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Services</p>
             </Link>
+            <Link href={"/portfolio"}>
+                <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Portfolio</p>
+            </Link>
             <Link href={"/contact"}>
                 <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Contact</p>
             </Link>
