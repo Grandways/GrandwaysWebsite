@@ -903,6 +903,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1059,6 +1062,14 @@ textarea{
   border: 2px solid #222952;
 }
 
+.active{
+  background-color: #222952;
+}
+
+.tactive{
+  color: #FFFFFF;
+}
+
 .hover\:scale-\[1\.05\]:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1068,6 +1079,11 @@ textarea{
 .hover\:bg-\[\#222952\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(34 41 82 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#d0d0d0\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 208 208 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:right-\[-5\%\] {

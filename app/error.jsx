@@ -20,11 +20,12 @@ export default function Error({ error, reset }) {
 
     return(
         <section className="page w-full flex min-h-screen justify-center">
-            <div className="w-full h-full min-h-fit flex flex-col items-center
-             justify-center gap-y-4 max-w-[1500px] px-2 md:px-6 2xl:px-12 text-center">
+            <div className="w-full h-[90vh] min-h-fit flex flex-col items-center
+             justify-center gap-[50px] max-w-[1500px] px-2 md:px-6 2xl:px-12 text-center">
                 <h2>We're expriencing errors on our side.<br/> Sorry about that!</h2>
                 <a href={pathname}>
                     <button
+                        className='w-[150px] h-[50px] border-[1px] border-[#333333] rounded-[25px]'
                         onClick={
                         // Attempt to recover by trying to re-render the segment
                         () => resetTemp()

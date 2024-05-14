@@ -132,3 +132,11 @@ textarea{
   color: #222952;
   border: 2px solid #222952;
 }
+
+.active{
+  background-color: #222952;
+}
+
+.tactive{
+  color: #FFFFFF;
+}
