@@ -18,7 +18,7 @@ export function Navbar() {
       </Link>
       <div className="flex gap-[20px]">
         <Link href={"/"}>
-          <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">
+          <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">
             Home
           </p>
         </Link>
