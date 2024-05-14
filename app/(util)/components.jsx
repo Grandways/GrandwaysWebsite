@@ -17,9 +17,11 @@ export function Navbar() {
         />
       </Link>
       <div className="flex gap-[20px]">
-        {/* <Link href={"/"}>
-                <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Home</p>
-            </Link> */}
+        <Link href={"/"}>
+          <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">
+            Home
+          </p>
+        </Link>
         <Link href={"/about"}>
           <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">
             About
@@ -30,11 +32,11 @@ export function Navbar() {
             Services
           </p>
         </Link>
-        <Link href={"/portfolio"}>
+        {/* <Link href={"/portfolio"}>
           <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">
             Portfolio
           </p>
-        </Link>
+        </Link> */}
         {/* <Link href={"/get-a-quote"}>
                 <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">Get Quote</p>
             </Link> */}
@@ -61,7 +63,34 @@ export function Footer() {
             className="cursor-pointer max-md:w-[250px] max-md:h-[56px]"
           />
         </Link>
+
         <div className="flex gap-[50px]">
+          <div>
+            <p className="text-[24px] mb-[25px] max-md:text-[18px] max-md:mb-[15px]">
+              Locations
+            </p>
+            <div>
+              <Link
+                target="blank"
+                rel="noopener"
+                href={"https://maps.app.goo.gl/y8FYMbJ2VPHMNC9T6"}
+              >
+                <p>
+                  Gaborone, <span className="font-bold">Botswana</span>
+                </p>
+              </Link>
+              {/* <Link target="blank" rel="noopener" href={""}> */}
+              <p>
+                Selebi Phikwe, <span className="font-bold">Botswana</span>
+              </p>
+              {/* </Link> */}
+              {/* <Link target="blank" rel="noopener" href={""}> */}
+              <p>
+                Maseru, <span className="font-bold">Lesotho</span>
+              </p>
+              {/* </Link> */}
+            </div>
+          </div>
           <div className="flex flex-col max-md:items-center">
             <p className="text-[24px] mb-[25px] max-md:text-[18px] max-md:mb-[15px]">
               Menu
