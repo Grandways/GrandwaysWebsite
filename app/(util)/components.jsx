@@ -11,20 +11,23 @@ export function Navbar(){
                 <Image src={logo} alt="Grandways Logo" width={224} height={50} className="cursor-pointer max-md:hidden" />
             </Link>
           <div className="flex gap-[20px]">
-            <Link href={"/"}>
+            {/* <Link href={"/"}>
                 <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Home</p>
-            </Link>
+            </Link> */}
             <Link href={"/about"}>
-                <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">About</p>
+                <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">About</p>
             </Link>
             <Link href={"/services"}>
-                <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Services</p>
+                <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">Services</p>
             </Link>
             <Link href={"/portfolio"}>
-                <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Portfolio</p>
+                <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">Portfolio</p>
+            </Link>
+            <Link href={"/get-a-quote"}>
+                <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">Get Quote</p>
             </Link>
             <Link href={"/contact"}>
-                <p className="cursor-pointer nav-element text-[#E10617] uppercase max-md:text-[16px]">Contact</p>
+                <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">Contact</p>
             </Link>
           </div>
         </div>
