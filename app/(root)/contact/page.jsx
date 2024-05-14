@@ -84,6 +84,7 @@ const Contact = () => {
                 Gaborone, <span className="font-bold">Botswana</span>
               </p>
               <p className="max-md:text-[16px] max-md:text-center">
+                18996 Industrial Side
                 <br />
                 Selebi Phikwe, <span className="font-bold">Botswana</span>
               </p>
