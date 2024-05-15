@@ -146,10 +146,19 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <p className="flex items-center gap-[5px] max-md:text-[16px]">
-        <FaRegCopyright />
-        2024 Grandways
-      </p>
+
+      <div className="flex gap-[25px]">
+        <p className="flex items-center gap-[5px] max-md:text-[16px]">
+          <FaRegCopyright />
+          2024 Grandways
+        </p>
+        <p className="text-transparent">
+          Website by{" "}
+          <Link target="blank" rel="noopener" href={"https://searchnomore.dev"}>
+            Search No More
+          </Link>
+        </p>
+      </div>
     </div>
   );
 }
