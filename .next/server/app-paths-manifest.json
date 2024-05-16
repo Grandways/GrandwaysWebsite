@@ -1,5 +1,1 @@
-{
-  "/(root)/(home)/page": "app/(root)/(home)/page.js",
-  "/(root)/get-a-quote/page": "app/(root)/get-a-quote/page.js",
-  "/(root)/contact/page": "app/(root)/contact/page.js"
-}
+{}
