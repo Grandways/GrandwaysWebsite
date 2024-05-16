@@ -1,7 +1,5 @@
 {
-  "/(root)/(home)/page": "app/(root)/(home)/page.js",
-  "/(root)/get-a-quote/page": "app/(root)/get-a-quote/page.js",
   "/(root)/contact/page": "app/(root)/contact/page.js",
-  "/api/send-email": "app/api/send-email.js",
-  "/not-found": "app/not-found.js"
+  "/(root)/(home)/page": "app/(root)/(home)/page.js",
+  "/(root)/get-a-quote/page": "app/(root)/get-a-quote/page.js"
 }
