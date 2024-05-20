@@ -3,34 +3,31 @@ import Link from "next/link";
 import { FaRegLightbulb, FaRegIdCard } from "react-icons/fa";
 import { FaPerson } from "react-icons/fa6";
 import { IoMegaphoneSharp } from "react-icons/io5";
-import nbfira from "@/public/assets/nbfira-logo.png"
-import cll from "@/public/assets/cll-logo.png"
-import kbl from "@/public/assets/kbl-logo.png"
-import oxygas from "@/public/assets/oxygas-logo.png"
-import bcm from "@/public/assets/bcm-logo.png"
-import guc from "@/public/assets/guc-logo.png"
-import hLeft from "@/public/assets/h-left.png"
-import hMid from "@/public/assets/h-mid.jpg"
-import hRight from "@/public/assets/h-right.png"
-import aSec from "@/public/assets/a-sec.png"
-import heroImg from "@/public/assets/heroimg.png"
-import h1 from "@/public/assets/h1.png"
-import acca from "@/public/assets/acca.png"
-import baoa from "@/public/assets/baoa.png"
-import bokomo from "@/public/assets/bokomo.png"
-import bomaid from "@/public/assets/bomaid.png"
-import botusafe from "@/public/assets/botusafe.png"
-import nacb from "@/public/assets/nacb.png"
-import ndb from "@/public/assets/ndb.png"
-import orthosurge from "@/public/assets/orthosurge.png"
-import sadc from "@/public/assets/sadc.png"
-import ub from "@/public/assets/ub.png"
-import zeta from "@/public/assets/zeta.png"
+import nbfira from "@/public/assets/nbfira-logo.png";
+import cll from "@/public/assets/cll-logo.png";
+import kbl from "@/public/assets/kbl-logo.png";
+import oxygas from "@/public/assets/oxygas-logo.png";
+import bcm from "@/public/assets/bcm-logo.png";
+import guc from "@/public/assets/guc-logo.png";
+import aSec from "@/public/assets/a-sec.png";
+import heroImg from "@/public/assets/heroimg.png";
+import h1 from "@/public/assets/h1.png";
+import acca from "@/public/assets/acca.png";
+import baoa from "@/public/assets/baoa.png";
+import bokomo from "@/public/assets/bokomo.png";
+import bomaid from "@/public/assets/bomaid.png";
+import botusafe from "@/public/assets/botusafe.png";
+import nacb from "@/public/assets/nacb.png";
+import ndb from "@/public/assets/ndb.png";
+import orthosurge from "@/public/assets/orthosurge.png";
+import sadc from "@/public/assets/sadc.png";
+import ub from "@/public/assets/ub.png";
+import zeta from "@/public/assets/zeta.png";
 
 export const metadata = {
   title: "Grandways - Brilliant Minds, Expect More",
-  description: ""
-}
+  description: "",
+};
 
 export default function Home() {
   return (
@@ -42,8 +39,16 @@ export default function Home() {
           </div>
           <hr className="w-[300px] rotate-90 text-white" />
           <div className="relative">
-            <p className="text-[24px] italic text-white w-[500px] translate-y-[-50px]">We believe in your explosive ideas, begin your journey with us...</p>
-            <Image src={h1} width={840} height={365} alt="" className="absolute z-10 translate-x-[-100px] translate-y-[-100px]" />
+            <p className="text-[24px] italic text-white w-[500px] translate-y-[-50px]">
+              We believe in your explosive ideas, begin your journey with us...
+            </p>
+            <Image
+              src={h1}
+              width={840}
+              height={365}
+              alt=""
+              className="absolute z-10 translate-x-[-100px] translate-y-[-100px]"
+            />
           </div>
         </div>
 
@@ -52,14 +57,24 @@ export default function Home() {
           <div className="flex mb-[50px]">
             <div>
               <p className="w-[700px] max-md:w-[300px] max-md:text-center max-md:text-[16px]">
-                  At Grandways, we transform businesses, brands, and organisations through the use of visual and emotive connections, aiming to create a lasting commercial and social impact. We go the extra mile for our clients, hence the mantra; <span className="font-bold">Brilliant Minds, Expect More!</span>
-                <br/><br/>
-                  The GrandTeam consists of a group of resourceful, noble individuals, who are humble, highly experienced, and hardworking in the following fields:
-                  <br/><br/>
+                At Grandways, we transform businesses, brands, and organisations
+                through the use of visual and emotive connections, aiming to
+                create a lasting commercial and social impact. We go the extra
+                mile for our clients, hence the mantra;{" "}
+                <span className="font-bold">Brilliant Minds, Expect More!</span>
+                <br />
+                <br />
+                The GrandTeam consists of a group of resourceful, noble
+                individuals, who are humble, highly experienced, and hardworking
+                in the following fields:
+                <br />
+                <br />
               </p>
 
               <p className="font-bold w-[700px] max-md:w-[300px] max-md:text-center max-md:text-[16px]">
-                  Graphic Design and Animation | Production and Quality Assurance | Brand Strategy | Public Relations and Media Specialist | Copy Writing | Publications
+                Graphic Design and Animation | Production and Quality Assurance
+                | Brand Strategy | Public Relations and Media Specialist | Copy
+                Writing | Publications
               </p>
             </div>
 
@@ -72,21 +87,34 @@ export default function Home() {
         <div className="w-full flex flex-col items-center py-[50px] bg-[#f0f0f0] max-md:px-[16px] max-md:py-[25px]">
           <h2 className="mb-[50px] max-md:text-[36px]">Our Services</h2>
           <div className="flex flex-col gap-[20px] mb-[50px]">
-
             <div className="flex gap-[25px] max-md:flex-col">
               <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
                 <FaRegLightbulb className="text-[#222952] w-[100px] h-[100px] max-md:hidden" />
                 <div className="flex flex-col gap-[10px]">
-                  <p className="text-[24px] max-md:text-[18px] font-bold">Strategy Development</p>
-                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">We devise the right strategy for your brand to ensure the right message reaches the right audience, at the right time, every time. Brand Strategy, Integrated Marketing and Communications Strategy.</p>
+                  <p className="text-[24px] max-md:text-[18px] font-bold">
+                    Strategy Development
+                  </p>
+                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">
+                    We devise the right strategy for your brand to ensure the
+                    right message reaches the right audience, at the right time,
+                    every time. Brand Strategy, Integrated Marketing and
+                    Communications Strategy.
+                  </p>
                 </div>
               </div>
-              
+
               <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
                 <FaRegIdCard className="text-[#222952] w-[100px] h-[100px] max-md:hidden" />
                 <div className="flex flex-col gap-[10px]">
-                  <p className="text-[24px] max-md:text-[18px] font-bold">Brand Identity</p>
-                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">We develop brands that will give a true reflection of its promise to its own audience, from initial conceptualisation of a new brand, to identifying a brand strategy or even re-branding.</p>
+                  <p className="text-[24px] max-md:text-[18px] font-bold">
+                    Brand Identity
+                  </p>
+                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">
+                    We develop brands that will give a true reflection of its
+                    promise to its own audience, from initial conceptualisation
+                    of a new brand, to identifying a brand strategy or even
+                    re-branding.
+                  </p>
                 </div>
               </div>
             </div>
@@ -95,56 +123,183 @@ export default function Home() {
               <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
                 <FaPerson className="text-[#222952] w-[100px] h-[100px] max-md:hidden" />
                 <div className="flex flex-col gap-[10px]">
-                  <p className="text-[24px] max-md:text-[18px] font-bold">Merchandise</p>
-                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">Grandways finds the best promotional items, corporate merchandise and memorabilia that will communicate your brand to your audience. Corporate & Promotional merchandise, Branding material, Radio jingles (Script and production), etc.</p>
+                  <p className="text-[24px] max-md:text-[18px] font-bold">
+                    Merchandise
+                  </p>
+                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">
+                    Grandways finds the best promotional items, corporate
+                    merchandise and memorabilia that will communicate your brand
+                    to your audience. Corporate & Promotional merchandise,
+                    Branding material, Radio jingles (Script and production),
+                    etc.
+                  </p>
                 </div>
               </div>
 
               <div className="services w-[570px] h-[225px] flex justify-between px-[25px] items-center bg-[#ffffff] rounded-[15px] max-md:w-fit max-md:h-fit max-md:p-[15px]">
                 <IoMegaphoneSharp className="text-[#222952] w-[100px] h-[100px] max-md:hidden" />
                 <div className="flex flex-col gap-[10px]">
-                  <p className="text-[24px] max-md:text-[18px] font-bold">Activations & Publications</p>
-                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">With activations, we connect consumers with brands in ways that transcend conventional means of interaction. We aim to connect people to brands in a way that inspires and triggers action.</p>
+                  <p className="text-[24px] max-md:text-[18px] font-bold">
+                    Activations & Publications
+                  </p>
+                  <p className="w-[395px] max-md:text-[16px] max-md:w-[328px]">
+                    With activations, we connect consumers with brands in ways
+                    that transcend conventional means of interaction. We aim to
+                    connect people to brands in a way that inspires and triggers
+                    action.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <Link href={"/services"}>
-            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">View Services</button>
+            <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px]">
+              View Services
+            </button>
           </Link>
         </div>
 
         <div className="w-full py-[50px] px-[135px] max-md:px-[16px] max-md:flex max-md:flex-col max-md:items-center">
           <h2 className="mb-[25px] max-md:text-[36px]">Our Giants</h2>
           <div className="flex justify-between">
-            <p className="w-1/2 mb-[50px] max-md:text-[16px] max-md:text-center max-md:w-full">Celebrating our valued partnerships with leading brands. Appreciating the companies we've collaborated with, each representing a successful journey in marketing and advertising. Together, we've achieved remarkable results and fueled growth for our clients.</p>
+            <p className="w-1/2 mb-[50px] max-md:text-[16px] max-md:text-center max-md:w-full">
+              Celebrating our valued partnerships with leading brands.
+              Appreciating the companies we've collaborated with, each
+              representing a successful journey in marketing and advertising.
+              Together, we've achieved remarkable results and fueled growth for
+              our clients.
+            </p>
             <Link href={"/contact"}>
-              <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px] max-md:hidden">Work With Us</button>
+              <button className="w-[150px] h-[50px] rounded-[25px] border-[1px] border-[#000000] border-solid mb-[75px] max-md:hidden">
+                Work With Us
+              </button>
             </Link>
           </div>
 
           <div className="w-full h-[150px] bg-[#f0f0f0] flex gap-[30px] justify-between overflow-x-auto overflow-y-hidden items-center rounded-[15px] p-[25px] max-md:flex-col max-md:w-[200px] max-md:h-full max-md:gap-[15px]">
-            <Image src={nbfira} alt="turnstar logo" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={cll} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={kbl} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={oxygas} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={bcm} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={guc} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={acca} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={baoa} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={bokomo} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={bomaid} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={botusafe} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={nacb} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={ndb} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={orthosurge} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={sadc} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={ub} alt="" width={150} height={100} className="rounded-[5px] partners" />
-              <Image src={zeta} alt="" width={150} height={100} className="rounded-[5px] partners" />
+            <Image
+              src={nbfira}
+              alt="nbfira logo"
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={cll}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={kbl}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={oxygas}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={bcm}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={guc}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={acca}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={baoa}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={bokomo}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={bomaid}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={botusafe}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={nacb}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={ndb}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={orthosurge}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={sadc}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={ub}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
+            <Image
+              src={zeta}
+              alt=""
+              width={150}
+              height={100}
+              className="rounded-[5px] partners"
+            />
           </div>
         </div>
-      </div>  
+      </div>
     </>
   );
 }
