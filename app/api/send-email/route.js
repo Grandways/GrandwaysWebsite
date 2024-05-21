@@ -1,4 +1,3 @@
-// /app/api/send-email/route.js
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
@@ -15,11 +14,16 @@ export async function POST(request) {
     lastMachineIndex = (lastMachineIndex + 1) % machines.length;
 
     let transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'mail.grandways.co.bw',
+      port: 587,
+      secure: false, // Use true for port 465
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
+      tls: {
+        ciphers: 'SSLv3'
+      }
     });
 
     let mailOptions = {
