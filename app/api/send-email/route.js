@@ -1,3 +1,4 @@
+// /app/api/send-email/route.js
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
@@ -5,8 +6,10 @@ const machines = ['graphics@grandways.co.bw', 'clientservices@grandways.co.bw', 
 let lastMachineIndex = 0;
 
 export async function POST(request) {
+  console.log('API called');
   try {
     const { name, email, message } = await request.json();
+    console.log('Request body:', { name, email, message });
 
     const nextMachine = machines[lastMachineIndex];
     lastMachineIndex = (lastMachineIndex + 1) % machines.length;
@@ -27,8 +30,10 @@ export async function POST(request) {
     };
 
     await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully');
     return NextResponse.json({ message: 'Email sent successfully!' }, { status: 200 });
   } catch (error) {
+    console.error('Failed to send email:', error);
     return NextResponse.json({ message: 'Failed to send email.' }, { status: 500 });
   }
 }

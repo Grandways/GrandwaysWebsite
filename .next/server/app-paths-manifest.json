@@ -1,5 +1,5 @@
 {
-  "/(root)/get-a-quote/page": "app/(root)/get-a-quote/page.js",
-  "/not-found": "app/not-found.js",
-  "/(root)/(home)/page": "app/(root)/(home)/page.js"
+  "/(root)/(home)/page": "app/(root)/(home)/page.js",
+  "/api/send-email/route": "app/api/send-email/route.js",
+  "/(root)/get-a-quote/page": "app/(root)/get-a-quote/page.js"
 }
