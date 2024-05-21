@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/assets/logo.png";
+// import logo from "@/public/assets/logo.png";
 import { FaRegCopyright } from "react-icons/fa";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 
@@ -9,7 +9,7 @@ export function Navbar() {
     <div className="h-[64px] w-full px-[135px] flex justify-between items-center relative z-50 max-md:px-[16px] max-md:justify-center">
       <Link href={"/"} className="max-md:hidden">
         <Image
-          src={logo}
+          src="/assets/logo.png"
           alt="Grandways Logo"
           width={224}
           height={50}
@@ -56,7 +56,7 @@ export function Footer() {
       <div className="flex justify-between items-start max-md:flex-col max-md:gap-[25px] max-md:items-center">
         <Link href={"/"}>
           <Image
-            src={logo}
+            src="/assets/logo.png"
             alt="Grandways Logo"
             width={334}
             height={75}

@@ -3,26 +3,6 @@ import Link from "next/link";
 import { FaRegLightbulb, FaRegIdCard } from "react-icons/fa";
 import { FaPerson } from "react-icons/fa6";
 import { IoMegaphoneSharp } from "react-icons/io5";
-import nbfira from "@/public/assets/nbfira-logo.png";
-import cll from "@/public/assets/cll-logo.png";
-import kbl from "@/public/assets/kbl-logo.png";
-import oxygas from "@/public/assets/oxygas-logo.png";
-import bcm from "@/public/assets/bcm-logo.png";
-import guc from "@/public/assets/guc-logo.png";
-import aSec from "@/public/assets/a-sec.png";
-import heroImg from "@/public/assets/heroimg.png";
-import h1 from "@/public/assets/h1.png";
-import acca from "@/public/assets/acca.png";
-import baoa from "@/public/assets/baoa.png";
-import bokomo from "@/public/assets/bokomo.png";
-import bomaid from "@/public/assets/bomaid.png";
-import botusafe from "@/public/assets/botusafe.png";
-import nacb from "@/public/assets/nacb.png";
-import ndb from "@/public/assets/ndb.png";
-import orthosurge from "@/public/assets/orthosurge.png";
-import sadc from "@/public/assets/sadc.png";
-import ub from "@/public/assets/ub.png";
-import zeta from "@/public/assets/zeta.png";
 
 export const metadata = {
   title: "Grandways - Brilliant Minds, Expect More",
@@ -35,7 +15,13 @@ export default function Home() {
       <div>
         <div className="w-full h-[700px] bg-[#000000] flex items-center max-md:px-[16px] px-[135px]">
           <div>
-            <Image src={heroImg} width={530} height={530} alt="" className="" />
+            <Image
+              src="/assets/heroimg.png"
+              width={530}
+              height={530}
+              alt="test"
+              className=""
+            />
           </div>
           <hr className="w-[300px] rotate-90 text-white" />
           <div className="relative">
@@ -43,7 +29,7 @@ export default function Home() {
               We believe in your explosive ideas, begin your journey with us...
             </p>
             <Image
-              src={h1}
+              src="/assets/h1.png"
               width={840}
               height={365}
               alt=""
@@ -79,7 +65,13 @@ export default function Home() {
             </div>
 
             <div className="w-[370px] h-[200px] bg-[#EAE8E8] ml-[90px] rounded-[15px] flex items-center justify-center overflow-hidden max-md:hidden">
-              <Image src={aSec} alt="" width={370} height={200} className="" />
+              <Image
+                src="/assets/a-sec.png"
+                alt=""
+                width={370}
+                height={200}
+                className=""
+              />
             </div>
           </div>
         </div>
@@ -179,119 +171,119 @@ export default function Home() {
 
           <div className="w-full h-[150px] bg-[#f0f0f0] flex gap-[30px] justify-between overflow-x-auto overflow-y-hidden items-center rounded-[15px] p-[25px] max-md:flex-col max-md:w-[200px] max-md:h-full max-md:gap-[15px]">
             <Image
-              src={nbfira}
+              src="/assets/nbfira-logo.png"
               alt="nbfira logo"
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={cll}
+              src="/assets/cll-logo.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={kbl}
+              src="/assets/kbl-logo.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={oxygas}
+              src="/assets/oxygas-logo.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={bcm}
+              src="/assets/bcm-logo.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={guc}
+              src="/assets/guc-logo.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={acca}
+              src="/assets/acca.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={baoa}
+              src="/assets/baoa.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={bokomo}
+              src="/assets/bokomo.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={bomaid}
+              src="/assets/bomaid.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={botusafe}
+              src="/assets/botusafe.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={nacb}
+              src="/assets/nacb.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={ndb}
+              src="/assets/ndb.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={orthosurge}
+              src="/assets/orthosurge.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={sadc}
+              src="/assets/sadc.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={ub}
+              src="/assets/ub.png"
               alt=""
               width={150}
               height={100}
               className="rounded-[5px] partners"
             />
             <Image
-              src={zeta}
+              src="/assets/zeta.png"
               alt=""
               width={150}
               height={100}

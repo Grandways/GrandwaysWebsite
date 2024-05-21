@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import supabase from "@/app/config/supabaseClient";
+import supabase from "/app/config/supabaseClient";
 import { useState } from "react";
 
 const Contact = () => {
