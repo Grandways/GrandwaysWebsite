@@ -22,8 +22,13 @@ export async function POST(request) {
         pass: process.env.EMAIL_PASS,
       },
       tls: {
-        ciphers: 'SSLv3'
-      }
+        // Ensure proper TLS configuration
+        rejectUnauthorized: false,
+        minVersion: 'TLSv1.2',
+      },
+      family: 4, // Force Nodemailer to use IPv4
+      debug: true, // Enable debug output
+      logger: true, // Log information
     });
 
     let mailOptions = {

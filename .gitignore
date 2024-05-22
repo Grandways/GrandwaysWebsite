@@ -37,4 +37,3 @@ next-env.d.ts
 
 # pages
 /app/(root)/portfolio
-/app/(root)/get-a-quote
