@@ -14,9 +14,9 @@ export async function POST(request) {
     lastMachineIndex = (lastMachineIndex + 1) % machines.length;
 
     let transporter = nodemailer.createTransport({
-      host: 'mail.grandways.co.bw',
-      port: 587,
-      secure: false, // Use true for port 465
+      host: process.env.EMAIL_HOST,
+      port: 465,
+      secure: true, // Use true for port 465
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
