@@ -1,18 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 const Quote = () => {
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  const [activeOptions, setActiveOptions] = useState({});
-  const [isHidden, setIsHidden] = useState(true);
-  const [isHidden2, setIsHidden2] = useState(true);
   const [itemName, setItemName] = useState("");
   const [quantity, setQuantity] = useState(0);
   const [items, setItems] = useState([]);
-
+  const [isHidden, setIsHidden] = useState(true);
   const [form, setForm] = useState({
+    name: "",
+    lastname: "",
+    email: "",
+  });
+
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [activeOptions, setActiveOptions] = useState({});
+  const [isHidden2, setIsHidden2] = useState(true);
+  const [secondForm, setSecondForm] = useState({
     name: "",
     lastname: "",
     email: "",
@@ -30,9 +34,62 @@ const Quote = () => {
         body: JSON.stringify({
           name: `${form.name} ${form.lastname}`,
           email: form.email,
-          message: `New quote submission:\n\n${items
-            .map((item) => `${item.name} x${item.quantity}`)
-            .join("\n")}`,
+          message: `
+            <p style="font-size: 16px;">New quote request for Branding:</p>
+            <p style="font-size: 16px;"><strong>Name:</strong> ${form.name} ${
+            form.lastname
+          }</p>
+            <p style="font-size: 16px;"><strong>Email:</strong> ${
+              form.email
+            }</p>
+            <p style="font-size: 16px;">Items Requested:</p>
+            <ul style="font-size: 16px;">
+              ${items
+                .map((item) => `<li>${item.name} x${item.quantity}</li>`)
+                .join("")}
+            </ul>
+            <p style="font-size: 16px;">Sent from the GrandWays Website ;)</p>
+          `,
+        }),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log(result.message);
+      } else {
+        console.error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
+  const handleSubmit2 = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: `${secondForm.name} ${secondForm.lastname}`,
+          email: secondForm.email,
+          message: `
+            <p style="font-size: 16px;">New quote request for the following services:</p>
+            <p style="font-size: 16px;"><strong>Name:</strong> ${
+              secondForm.name
+            } ${secondForm.lastname}</p>
+            <p style="font-size: 16px;"><strong>Email:</strong> ${
+              secondForm.email
+            }</p>
+            <p style="font-size: 16px;">Services Requested:</p>
+            <ul style="font-size: 16px;">
+              ${selectedOptions.map((option) => `<li>${option}</li>`).join("")}
+            </ul>
+            <p style="font-size: 16px;">Sent from the GrandWays Website ;)</p>
+          `,
         }),
       });
 
@@ -85,14 +142,14 @@ const Quote = () => {
     <>
       <div>
         <div className="w-full h-[350px] bg-[#F8F9F9] flex flex-col justify-center items-center">
-          <h1>Cost Calculator</h1>
+          <h1>Get a Quote</h1>
         </div>
 
         <div className="w-full flex flex-col items-center py-[50px] px-[135px] gap-[50px]">
           <div className="flex flex-col items-center gap-[25px]">
             <h3>Branding</h3>
             <p className="w-[770px] text-center">
-              If you are interested in branded items (eg. Corporate Clothing,
+              If you are interested in branded items, (eg. Corporate Clothing,
               Notepads, Pens etc.) please browse our branding catalogue(s) and
               request a quote below.
             </p>
@@ -380,7 +437,7 @@ const Quote = () => {
               <h2>Get a Quote</h2>
 
               <form
-                onSubmit={handleSubmit}
+                onSubmit={handleSubmit2}
                 className="flex flex-col items-center gap-[15px]"
               >
                 <div className="flex gap-[20px]">
@@ -390,9 +447,9 @@ const Quote = () => {
                       type="text"
                       className="w-[325px] h-[40px] bg-[#F8F9F9] rounded-[7.5px] px-[10px]"
                       onChange={(e) =>
-                        setForm({ ...form, name: e.target.value })
+                        setSecondForm({ ...secondForm, name: e.target.value })
                       }
-                      value={form.name}
+                      value={secondForm.name}
                     />
                   </div>
 
@@ -402,9 +459,12 @@ const Quote = () => {
                       type="text"
                       className="w-[325px] h-[40px] bg-[#F8F9F9] rounded-[7.5px] px-[10px]"
                       onChange={(e) =>
-                        setForm({ ...form, lastname: e.target.value })
+                        setSecondForm({
+                          ...secondForm,
+                          lastname: e.target.value,
+                        })
                       }
-                      value={form.lastname}
+                      value={secondForm.lastname}
                     />
                   </div>
                 </div>
@@ -415,9 +475,9 @@ const Quote = () => {
                     type="email"
                     className="w-full h-[40px] bg-[#F8F9F9] rounded-[7.5px] px-[10px]"
                     onChange={(e) =>
-                      setForm({ ...form, email: e.target.value })
+                      setSecondForm({ ...secondForm, email: e.target.value })
                     }
-                    value={form.email}
+                    value={secondForm.email}
                   />
                 </div>
 

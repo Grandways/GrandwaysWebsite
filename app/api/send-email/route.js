@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-const machines = ['graphics@grandways.co.bw', 'clientservices@grandways.co.bw', 'sales@grandways.co.bw'];
+const machines = ['graphics@grandways.co.bw', /*'clientservices@grandways.co.bw', 'sales@grandways.co.bw'*/];
 let lastMachineIndex = 0;
 
 export async function POST(request) {
@@ -15,20 +15,19 @@ export async function POST(request) {
 
     let transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
-      port: 465,
-      secure: true, // Use true for port 465
+      port: 587,
+      secure: false,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
       tls: {
-        // Ensure proper TLS configuration
         rejectUnauthorized: false,
         minVersion: 'TLSv1.2',
       },
-      family: 4, // Force Nodemailer to use IPv4
-      debug: true, // Enable debug output
-      logger: true, // Log information
+      family: 4,
+      debug: true,
+      logger: true,
     });
 
     let mailOptions = {

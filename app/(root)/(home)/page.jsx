@@ -26,7 +26,7 @@ export default function Home() {
           <hr className="w-[300px] rotate-90 text-white" />
           <div className="relative">
             <p className="text-[24px] italic text-white w-[500px] translate-y-[-50px]">
-              We believe in your explosive ideas, begin your journey with us...
+              We believe in your explosive ideas. Begin your journey with us...
             </p>
             <Image
               src="/assets/h1.png"

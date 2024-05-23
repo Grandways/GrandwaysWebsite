@@ -37,9 +37,11 @@ export function Navbar() {
             Portfolio
           </p>
         </Link> */}
-        {/* <Link href={"/get-a-quote"}>
-                <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">Get Quote</p>
-            </Link> */}
+        <Link href={"/get-a-quote"}>
+          <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">
+            Get Quoted
+          </p>
+        </Link>
         <Link href={"/contact"}>
           <p className="text-[16px] cursor-pointer nav-element text-[#E10617] uppercase">
             Contact
@@ -104,6 +106,9 @@ export function Footer() {
               </Link>
               <Link href={"/services"}>
                 <p className="cursor-pointer">Services</p>
+              </Link>
+              <Link href={"/get-a-quote"}>
+                <p className="cursor-pointer">Get a Quote</p>
               </Link>
               <Link href={"/contact"}>
                 <p className="cursor-pointer">Contact</p>
