@@ -35,20 +35,14 @@ const Quote = () => {
           name: `${form.name} ${form.lastname}`,
           email: form.email,
           message: `
-            <p style="font-size: 16px;">New quote request for Branding:</p>
-            <p style="font-size: 16px;"><strong>Name:</strong> ${form.name} ${
-            form.lastname
-          }</p>
-            <p style="font-size: 16px;"><strong>Email:</strong> ${
-              form.email
-            }</p>
-            <p style="font-size: 16px;">Items Requested:</p>
-            <ul style="font-size: 16px;">
+            New quote request for Branding:\n\n
+            Name: ${form.name} ${form.lastname}\n
+            Email: ${form.email}\n\n\n
+            Items Requested:\n
               ${items
-                .map((item) => `<li>${item.name} x${item.quantity}</li>`)
-                .join("")}
-            </ul>
-            <p style="font-size: 16px;">Sent from the GrandWays Website ;)</p>
+                .map((item) => `${item.name} x${item.quantity}`)
+                .join("")}\n\n\n
+            Sent from the GrandWays Website ;)
           `,
         }),
       });
@@ -77,18 +71,12 @@ const Quote = () => {
           name: `${secondForm.name} ${secondForm.lastname}`,
           email: secondForm.email,
           message: `
-            <p style="font-size: 16px;">New quote request for the following services:</p>
-            <p style="font-size: 16px;"><strong>Name:</strong> ${
-              secondForm.name
-            } ${secondForm.lastname}</p>
-            <p style="font-size: 16px;"><strong>Email:</strong> ${
-              secondForm.email
-            }</p>
-            <p style="font-size: 16px;">Services Requested:</p>
-            <ul style="font-size: 16px;">
-              ${selectedOptions.map((option) => `<li>${option}</li>`).join("")}
-            </ul>
-            <p style="font-size: 16px;">Sent from the GrandWays Website ;)</p>
+            New quote request for the following services:\n\n
+            Name: ${secondForm.name} ${secondForm.lastname}\n
+            Email: ${secondForm.email}\n\n\n
+            Services Requested:\n
+              ${selectedOptions.map((option) => `${option}`).join("")}\n\n\n
+            Sent from the GrandWays Website ;)
           `,
         }),
       });
