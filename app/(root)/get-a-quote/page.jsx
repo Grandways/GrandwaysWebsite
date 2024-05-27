@@ -71,18 +71,12 @@ const Quote = () => {
           name: `${secondForm.name} ${secondForm.lastname}`,
           email: secondForm.email,
           message: `
-            <p style="font-size: 16px;">New quote request for the following services:</p>
-            <p style="font-size: 16px;"><strong>Name:</strong> ${
-              secondForm.name
-            } ${secondForm.lastname}</p>
-            <p style="font-size: 16px;"><strong>Email:</strong> ${
-              secondForm.email
-            }</p>
-            <p style="font-size: 16px;">Services Requested:</p>
-            <ul style="font-size: 16px;">
-              ${selectedOptions.map((option) => `<li>${option}</li>`).join("")}
-            </ul>
-            <p style="font-size: 16px;">Sent from the GrandWays Website ;)</p>
+            New quote request for the following services:\n\n
+            Name: ${secondForm.name} ${secondForm.lastname}\n
+            Email: ${secondForm.email}\n\n\n
+            Services Requested:\n
+              ${selectedOptions.map((option) => `${option}`).join("")}\n\n\n
+            Sent from the GrandWays Website ;)
           `,
         }),
       });
