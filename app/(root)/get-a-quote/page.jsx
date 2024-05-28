@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
 
 const Quote = () => {
   const [itemName, setItemName] = useState("");
@@ -27,28 +25,6 @@ const Quote = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const renderedMessage = (
-      <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-        <h2 style="font-size: 24px;">New quote request for Branding:</h2>
-        <p style="font-size: 18px;">
-          <strong>Name:</strong> ${form.name} ${form.lastname}
-        </p>
-        <p style="font-size: 18px;">
-          <strong>Email:</strong> ${form.email}
-        </p>
-        <p style="font-size: 18px;">
-          <strong>Items Requested:</strong>
-        </p>
-        <ul style="font-size: 16px;">
-          $
-          {items
-            .map((item) => `<li>${item.name} x${item.quantity}</li>`)
-            .join("")}
-        </ul>
-        <p style="font-size: 14px;">Sent from the GrandWays Website ;)</p>
-      </ReactMarkdown>
-    );
-
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
@@ -58,7 +34,16 @@ const Quote = () => {
         body: JSON.stringify({
           name: `${form.name} ${form.lastname}`,
           email: form.email,
-          message: renderedMessage,
+          message: `
+            New quote request for Branding:\n\n
+            Name: ${form.name} ${form.lastname}\n
+            Email: ${form.email}\n\n\n
+            Items Requested:\n
+              ${items
+                .map((item) => `${item.name} x${item.quantity}`)
+                .join("")}\n\n\n
+            Sent from the GrandWays Website ;)
+          `,
         }),
       });
 
