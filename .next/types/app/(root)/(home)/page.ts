@@ -1,4 +1,4 @@
-// File: /Users/jaden/Documents/Code/Web Dev/grandways-site/app/(root)/(home)/page.jsx
+// File: C:\Users\Jaden\Documents\GrandwaysWebsite\app\(root)\(home)\page.jsx
 import * as entry from '../../../../../app/(root)/(home)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

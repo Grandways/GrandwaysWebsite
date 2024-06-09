@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="flex flex-col items-center">
+      <body className="max-w-[1440px]">
         <Navbar />
         {children}
         <Footer />
