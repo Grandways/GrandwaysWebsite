@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-const machines = ['jadenscontactemail@gmail.com', /*'graphics@grandways.co.bw', 'clientservices@grandways.co.bw', 'sales@grandways.co.bw'*/];
+const machines = ['graphics@grandways.co.bw', 'clientservices@grandways.co.bw', 'sales@grandways.co.bw', 'marketing@grandways.co.bw'];
 let lastMachineIndex = 0;
 
 export async function POST(request) {
