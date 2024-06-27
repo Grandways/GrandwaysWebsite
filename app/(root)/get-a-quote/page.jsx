@@ -136,14 +136,14 @@ const Quote = () => {
         <div className="w-full flex flex-col items-center py-[50px] px-[135px] gap-[50px]">
           <div className="flex flex-col items-center gap-[25px]">
             <h3>Branding</h3>
-            <p className="w-[770px] text-center">
+            <p className="w-[770px] text-center max-md:w-full">
               If you are interested in branded items, (eg. Corporate Clothing,
               Notepads, Pens etc.) please browse our branding catalogue(s) and
               request a quote below.
             </p>
           </div>
 
-          <div className="flex items-center justify-center gap-[20px]">
+          <div className="flex items-center justify-center gap-[20px] max-md:flex-col">
             <a href="/company-profile.pdf" target="_blank">
               <div className="group w-[270px] h-[75px] bg-[#F8F9F9] hover:bg-[#222952] cursor-pointer border-[1px] border-[#333333] rounded-[15px] flex items-center justify-center transition-all duration-[300ms]">
                 <p className="font-bold text-[#333333] group-hover:text-[#FFFFFF]">
@@ -281,7 +281,7 @@ const Quote = () => {
         <div className="w-full flex flex-col justify-center items-center px-[135px] py-[50px] gap-[50px]">
           <div className="flex flex-col items-center gap-[25px]">
             <h3>Our Services</h3>
-            <p className="w-[770px] text-center">
+            <p className="w-[770px] text-center max-md:w-full">
               Please select the service(s) you wish to be quoted for below.
               Please be mindful that the price listed below is an{" "}
               <span className="font-bold">estimate</span> and not a final quote.
@@ -289,7 +289,7 @@ const Quote = () => {
           </div>
 
           <div className="flex flex-col items-center gap-[20px]">
-            <div className="flex justify-between items-center gap-[20px]">
+            <div className="flex justify-between items-center gap-[20px] max-md:flex-col">
               <div
                 className={`group w-[270px] h-[75px] bg-[#F8F9F9] hover:bg-[#222952] cursor-pointer border-[1px] border-[#333333] rounded-[15px] flex items-center justify-center transition-all duration-[300ms] ${
                   activeOptions["Strategy Development"] ? "active" : ""
@@ -342,7 +342,7 @@ const Quote = () => {
               </div>
             </div>
 
-            <div className="flex justify-between items-center gap-[20px]">
+            <div className="flex justify-between items-center gap-[20px] max-md:flex-col">
               <div
                 className={`group w-[270px] h-[75px] bg-[#F8F9F9] hover:bg-[#222952] cursor-pointer border-[1px] border-[#333333] rounded-[15px] flex items-center justify-center transition-all duration-[300ms] ${
                   activeOptions["Publications Design"] ? "active" : ""

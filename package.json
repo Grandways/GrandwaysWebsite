@@ -23,6 +23,7 @@
     "supabase": "^1.153.4"
   },
   "devDependencies": {
+    "@types/node": "20.14.2",
     "@types/react": "18.3.2",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
