@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="w-full h-[700px] bg-[#000000] flex items-center max-md:px-[16px] px-[135px]">
+        <div className="w-full h-[700px] bg-[#000000] flex items-center max-md:px-[16px] max-md:flex-col px-[135px]">
           <div>
             <Image
               src="/assets/heroimg.png"
@@ -23,9 +23,9 @@ export default function Home() {
               className=""
             />
           </div>
-          <hr className="w-[300px] rotate-90 text-white" />
-          <div className="relative">
-            <p className="text-[24px] italic text-white w-[500px] translate-y-[-50px]">
+          <hr className="w-[300px] rotate-90 text-white max-md:rotate-0" />
+          <div className="relative max-md:translate-y-[100px]">
+            <p className="text-[24px] italic text-white w-[500px] translate-y-[-50px] max-md:w-full max-md:text-center">
               We believe in your explosive ideas. Begin your journey with us...
             </p>
             <Image
@@ -33,7 +33,7 @@ export default function Home() {
               width={840}
               height={365}
               alt=""
-              className="absolute z-10 translate-x-[-100px] translate-y-[-100px]"
+              className="absolute z-10 translate-x-[-100px] translate-y-[-100px] max-md:translate-y-[-50px] max-md:translate-x-[-0px]"
             />
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="w-full h-[150px] bg-[#f0f0f0] flex gap-[30px] justify-between overflow-x-auto overflow-y-hidden items-center rounded-[15px] p-[25px] max-md:flex-col max-md:w-[200px] max-md:h-full max-md:gap-[15px]">
+          <div className="w-full h-[150px] bg-[#f0f0f0] flex gap-[30px] justify-between overflow-x-auto overflow-y-hidden items-center rounded-[15px] p-[25px] max-md:flex-wrap max-md:w-full max-md:h-full max-md:gap-[10px] max-md:p-[15px] max-md:justify-center">
             <Image
               src="/assets/nbfira-logo.png"
               alt="nbfira logo"

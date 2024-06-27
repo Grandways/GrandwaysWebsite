@@ -99,19 +99,19 @@ export function Footer() {
             </p>
             <div className="flex flex-col gap-[5px] max-md:items-center">
               <Link href={"/"}>
-                <p className="cursor-pointer">Home</p>
+                <p className="cursor-pointer max-md:text-center">Home</p>
               </Link>
               <Link href={"/about"}>
-                <p className="cursor-pointer">About</p>
+                <p className="cursor-pointer max-md:text-center">About</p>
               </Link>
               <Link href={"/services"}>
-                <p className="cursor-pointer">Services</p>
+                <p className="cursor-pointer max-md:text-center">Services</p>
               </Link>
               <Link href={"/get-a-quote"}>
-                <p className="cursor-pointer">Get a Quote</p>
+                <p className="cursor-pointer max-md:text-center">Get a Quote</p>
               </Link>
               <Link href={"/contact"}>
-                <p className="cursor-pointer">Contact</p>
+                <p className="cursor-pointer max-md:text-center">Contact</p>
               </Link>
             </div>
           </div>
@@ -152,8 +152,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="flex gap-[25px]">
-        <p className="flex items-center gap-[5px] max-md:text-[16px]">
+      <div className="flex gap-[25px] max-md:flex-col max-md:gap-[5px]">
+        <p className="flex items-center gap-[5px] max-md:text-[16px] max-md:justify-center">
           <FaRegCopyright />
           2024 Grandways
         </p>
