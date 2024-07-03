@@ -128,12 +128,12 @@ const Quote = () => {
 
   return (
     <>
-      <div>
-        <div className="w-full h-[350px] bg-[#F8F9F9] flex flex-col justify-center items-center">
-          <h1>Get a Quote</h1>
+      <div className="w-full">
+        <div className="w-full h-[350px] bg-[#F8F9F9] flex flex-col justify-center items-center max-md:h-[250px]">
+          <h1 className="max-md:text-[48px]">Get a Quote</h1>
         </div>
 
-        <div className="w-full flex flex-col items-center py-[50px] px-[135px] gap-[50px]">
+        <div className="w-full flex flex-col items-center py-[50px] px-[135px] gap-[50px] max-md:px-[16px]">
           <div className="flex flex-col items-center gap-[25px]">
             <h3>Branding</h3>
             <p className="w-[770px] text-center max-md:w-full">
@@ -176,7 +176,7 @@ const Quote = () => {
         </div>
 
         {!isHidden && (
-          <div className="w-full flex flex-col py-[50px] gap-[50px] items-center">
+          <div className="w-full flex flex-col py-[50px] gap-[50px] items-center max-md:px-[16px]">
             <h2>Get a Quote</h2>
 
             <div className="flex gap-[25px]">
@@ -278,7 +278,7 @@ const Quote = () => {
           </div>
         )}
 
-        <div className="w-full flex flex-col justify-center items-center px-[135px] py-[50px] gap-[50px]">
+        <div className="w-full flex flex-col justify-center items-center px-[135px] py-[50px] gap-[50px] max-md:px-[16px]">
           <div className="flex flex-col items-center gap-[25px]">
             <h3>Our Services</h3>
             <p className="w-[770px] text-center max-md:w-full">
