@@ -144,7 +144,7 @@ const Quote = () => {
           </div>
 
           <div className="flex items-center justify-center gap-[20px] max-md:flex-col">
-            <a href="/company-profile.pdf" target="_blank">
+            <a href="/corporate-wear.pdf" target="_blank">
               <div className="group w-[270px] h-[75px] bg-[#F8F9F9] hover:bg-[#222952] cursor-pointer border-[1px] border-[#333333] rounded-[15px] flex items-center justify-center transition-all duration-[300ms]">
                 <p className="font-bold text-[#333333] group-hover:text-[#FFFFFF]">
                   Corporate Wear
